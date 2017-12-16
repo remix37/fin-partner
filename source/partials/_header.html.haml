@@ -11,6 +11,11 @@
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        - sitemap.resources.each do |f|
-          %li
-            %a{:href => f.path}= f.data.navigation
+        %li{ nav_active('index.html') }
+          = link_to "Home", "/", title: "Home"
+
+        %li{ nav_active('about-us.html') }
+          = link_to "About us", "/about-us.html", title: "About us"
+
+        %li{ nav_active('what-we-do.html') }
+          = link_to "What we do", "/what-we-do.html", title: "What we do"
