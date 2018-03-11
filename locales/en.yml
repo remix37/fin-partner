@@ -1,4 +1,15 @@
 en:
-  hello: "Hello"
   intro:
-    text: "Established in London in 2018, Fin Partners has become a trusted name for clients and potential candidates alike. We help companies hire great SAP seniors Consultants. Our offices are strategically located in London and Colombia, France. However, our operations are not restricted to these regions. Fin Partners specializes in working with a multitude of companies  ( consultancies and end-users). Our professionalism and knowledge the SAP ecosystem market is inparalleled."
+    title : "Who is Fin Partners ?"
+    text: |
+      Established in London in 2018, Fin Partners has become a trusted name for clients and potential candidates alike.
+      We help companies hire great SAP seniors Consultants.
+      Our offices are strategically located in London and Colombia, France.
+      However, our operations are not restricted to these regions.
+      Fin Partners specializes in working with a multitude of companies (consultancies and end-users).
+      Our professionalism and knowledge the SAP ecosystem market is inparalleled.
+
+  testimonies :
+    1 : testimony 1
+    2 : testimony 2
+    3 : testimony 3

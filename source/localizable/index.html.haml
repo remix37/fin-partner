@@ -3,20 +3,57 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 navigation : Home
 ---
 
+.container-fluid#home-screen
+  .row
+    .col-md-12
+      %h1 Fin Partners
+      %h2 Transparency is the Key.
+
+      %p We help companies hire great SAP Consultants.
+      %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
+
+
+  .row{:style => "position: absolute; bottom: 15px;"}
+    .col-md-4
+    .col-md-4
+      %p.text-center Who is Fin Partners
+    .col-md-4
+      %p.pull-left Follow us
+      %ul.list-inline
+        %li
+          Facebook
+        %li Linkedin
+        %li Twitter
+
+
 .container
-  .col-md-12
-    %h1 Fin Partners
-    %h2 Transparency is the Key.
 
-    %p= t(:hello)
-
-    %p We help companies hire great SAP Consultants.
-    %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
+  .row.row-eq-height{:style => "background: gray;"}
+    .col-md-6
+      %h1= t("intro.title")
+      %p= t("intro.text")
 
 
-.container
-  .col-md-6
-    %h1 Who is Fin Partners ?
-    = t("intro.text")
+      %ul
+        - t("testimonies").each do |testimony|
+          %li= testimony[1]
 
-  .col-md-6
+      %a.btn.btn-default{:href => "/"} Button
+
+    .col-md-6.partners
+
+
+  .row{:style => "background: blue;"}
+
+    .col-md-12
+      %h1.text-center What we do ?
+    .clearfix
+    .col-md-4.text-center.white
+      %h2 Executive search
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    .col-md-4.text-center.white
+      %h2 Interim Consultants
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    .col-md-4.text-center.white
+      %h2 Strategic Insight
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

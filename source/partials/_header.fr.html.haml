@@ -16,21 +16,21 @@
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li{ nav_active('index.html') }
-          = link_to "Home", "/", title: "Home"
+          = link_to "Accueil", "/fr", title: "Home"
 
         %li{ nav_active('about-us.html') }
-          = link_to "About us", "/about-us.html", title: "About us"
+          = link_to "À propos de nous", "/fr/about-us.html", title: "About us"
 
         %li{ nav_active('what-we-do.html') }
-          = link_to "What we do", "/what-we-do.html", title: "What we do"
+          = link_to "Nos missions", "/fr/what-we-do.html", title: "What we do"
 
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            English
+            Français
             %span.caret
           %ul.dropdown-menu
             %li
-              = link_to "English", "/"
+              %a{:href => "/"} Anglais
             %li
-              = link_to "French", "/fr"
+              %a{:href => "/"} Français

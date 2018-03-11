@@ -1,5 +1,36 @@
-@import "../libs/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../libs/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../libs/font-awesome/web-fonts-with-css/scss/fontawesome";
+// @import "../libs/vegas/dist/vegas.min.css";
+@import "./mixins.css.scss";
+@import "./vegas.css.scss";
 
-[aria-current]:not([aria-current="false"]) {
-  font-weight: bold;
+#home-screen {
+  height: 100vh;
 }
+
+.white {
+  color: white;
+}
+
+.partners {
+  background-color: red;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+// .navbar-brand {
+//   padding-left: 30px;
+//   padding-right: 30px;
+//   & > img {
+//     height: 50px;
+//   }
+// }
+//
+// .navbar-nav > li > a{
+//   padding: 30px;
+// }
