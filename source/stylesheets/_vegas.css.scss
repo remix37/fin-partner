@@ -24,13 +24,16 @@ $assetPath : "../images/overlay";
 .vegas-timer {
     top: auto;
     bottom: 0;
-    height: 2px;
+    height: 5px;
+    position: absolute;
+    z-index: 9999;
 }
 
 .vegas-timer-progress {
     width: 0%;
     height: 100%;
-    background: white;
+    // background: white;
+    background-color: $fp-alternative-color;
     -webkit-transition: width ease-out;
     transition: width ease-out;
 }

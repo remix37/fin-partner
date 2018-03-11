@@ -3,40 +3,43 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 navigation : Home
 ---
 
-.container-fluid#home-screen
-  .row
-    .col-md-12
-      %h1 Fin Partners
-      %h2 Transparency is the Key.
+#home
+  .home-inner
+    .container
+      .row
+        .col-md-12.white
+          %h1 Fin Partners
+          %h2 Transparency is the Key.
 
-      %p We help companies hire great SAP Consultants.
-      %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
+          %p We help companies hire great SAP Consultants.
+          %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
 
 
-  .row{:style => "position: absolute; bottom: 15px;"}
-    .col-md-4
-    .col-md-4
-      %p.text-center Who is Fin Partners
-    .col-md-4
-      %p.pull-left Follow us
-      %ul.list-inline
-        %li
-          Facebook
-        %li Linkedin
-        %li Twitter
+    .container-fluid
+      .row.home-bottom
+        .col-md-4
+        .col-md-4
+          %p.text-center Who is Fin Partners
+        .col-md-4
+          %p.pull-left Follow us
+          %ul.list-inline
+            %li
+              Facebook
+            %li Linkedin
+            %li Twitter
 
 
 .container
-
-  .row.row-eq-height{:style => "background: gray;"}
+  .row.row-eq-height.bg-white
     .col-md-6
       %h1= t("intro.title")
-      %p= t("intro.text")
 
+      - t("intro.description").each do |text|
+        %p= text
 
       %ul
         - t("testimonies").each do |testimony|
-          %li= testimony[1]
+          %li= testimony
 
       %a.btn.btn-default{:href => "/"} Button
 
@@ -57,3 +60,76 @@ navigation : Home
     .col-md-4.text-center.white
       %h2 Strategic Insight
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+
+  .row.bg-white
+    .col-md-12
+      %h1.text-center Testimonies
+
+      #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+        / Indicators
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+          %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+          %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+        / Wrapper for slides
+        .carousel-inner
+          .item.active
+            .row
+              .col-xs-12
+                .thumbnail.adjust1
+                  .col-md-2.col-sm-2.col-xs-12
+                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                  .col-md-10.col-sm-10.col-xs-12
+                    .caption
+                      %p.text-info.lead.adjust2 I can't wait to test this out.
+                      %p
+                        %span.glyphicon.glyphicon-thumbs-up>
+                         This is a testimonial window. Feedback of user can be displayed here.
+                      %blockquote.adjust2
+                        %p Abhijit Goswami
+                        %small
+                          %cite{:title => "Source Title"}
+                            %i.glyphicon.glyphicon-globe
+                            www.example1.com
+          .item
+            .row
+              .col-xs-12
+                .thumbnail.adjust1
+                  .col-md-2.col-sm-2.col-xs-12
+                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                  .col-md-10.col-sm-10.col-xs-12
+                    .caption
+                      %p.text-info.lead.adjust2 I can't wait to test this out.
+                      %p
+                        %span.glyphicon.glyphicon-thumbs-up>
+                         This is a testimonial window. Feedback of user can be displayed here.
+                      %blockquote.adjust2
+                        %p Abhijit Goswami
+                        %small
+                          %cite{:title => "Source Title"}
+                            %i.glyphicon.glyphicon-globe
+                            www.example2.com
+          .item
+            .row
+              .col-xs-12
+                .thumbnail.adjust1
+                  .col-md-2.col-sm-2.col-xs-12
+                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                  .col-md-10.col-sm-10.col-xs-12
+                    .caption
+                      %p.text-info.lead.adjust2 I can't wait to test this out.
+                      %p
+                        %span.glyphicon.glyphicon-thumbs-up>
+                         This is a testimonial window. Feedback of user can be displayed here.
+                      %blockquote.adjust2
+                        %p Abhijit Goswami
+                        %small
+                          %cite{:title => "Source Title"}
+                            %i.glyphicon.glyphicon-globe
+                            www.example3.com
+        / Controls
+        %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic"}
+          %span.glyphicon.glyphicon-chevron-left
+        %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic"}
+          %span.glyphicon.glyphicon-chevron-right

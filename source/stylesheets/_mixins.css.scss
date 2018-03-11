@@ -1,10 +1,9 @@
 // Colors
 $white-color: #fff;
 $black-color : #000;
-$fpartners-color: #2b4dd5;
-
-// Size
-$max-large: 1170px;
+$fp-color: #2b4dd5;
+$fp-alternative-color : #FF4719;
+$background-color : #EDF0FF;
 
 // Margins and Paddings
 .m-a {margin: auto;}
@@ -24,4 +23,24 @@ $loop-step: 5;
 			}
 		}
 	}
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
+/// and the `-webkit-` prefixed declaration
+/// @access public
+/// @param {Keyword | Angle} $direction - Linear gradient direction
+/// @param {Arglist} $color-stops - List of color-stops composing the gradient
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }

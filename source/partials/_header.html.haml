@@ -8,9 +8,7 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand{:href => "/"}
-        -# %img{:src => image_path('fin-partners_logo.png')}/
-        Brand
-
+        %img{:src => image_path('fin-partners_logo.png'), :srcset => " #{image_path('fin-partners_logo@2x.png')} 2x, #{image_path('fin-partners_logo.png')} 1x"}/
 
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse

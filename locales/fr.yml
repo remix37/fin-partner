@@ -1,15 +1,15 @@
 fr:
   intro:
     title : "Qui est Fin Partners ?"
-    text: |
-      Établi à Londres en 2018, Fin Partners est devenu un nom de confiance pour les clients et les candidats potentiels.
-      Nous aidons les entreprises à embaucher de grands consultants seniors SAP.
-      Nos bureaux sont stratégiquement situés à Londres et en Colombie, en France.
-      Cependant, nos opérations ne sont pas limitées à ces régions.
-      Fin Partners est spécialisé dans le travail avec une multitude d'entreprises (consultants et utilisateurs finaux).
-      Notre professionnalisme et notre connaissance du marché des écosystèmes SAP sont inégalés.
+    description :
+      - Établi à Londres en 2018, Fin Partners est devenu un nom de confiance pour les clients et les candidats potentiels.
+      - Nous aidons les entreprises à embaucher de grands consultants seniors SAP.
+      - Nos bureaux sont stratégiquement situés à Londres et en Colombie, en France.
+      - Cependant, nos opérations ne sont pas limitées à ces régions.
+      - Fin Partners est spécialisé dans le travail avec une multitude d'entreprises (consultants et utilisateurs finaux).
+      - Notre professionnalisme et notre connaissance du marché des écosystèmes SAP sont inégalés.
 
   testimonies :
-    1 : témoignage 1
-    2 : témoignage 2
-    3 : témoignage 3
+    - témoignage 1
+    - témoignage 2
+    - témoignage 3
