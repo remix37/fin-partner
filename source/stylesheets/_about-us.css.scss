@@ -1,0 +1,5 @@
+.about-us {
+  padding-top: 70px;
+  background-color: $fp-color;
+  @include retina('../images/about-us/bg-about-us.png', 2, cover, center center no-repeat);
+}

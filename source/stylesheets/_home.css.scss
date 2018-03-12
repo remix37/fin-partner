@@ -38,6 +38,10 @@
   }
 }
 
+.partners {
+  @include retina('../images/home/bg-partners.png', 2, cover, center center no-repeat);
+}
+
 // testimonies
 
 .thumbnail {

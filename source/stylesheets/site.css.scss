@@ -8,6 +8,7 @@
 @import "./icons-fp.css.scss";
 @import "./navbar.css.scss";
 @import "./home.css.scss";
+@import "./about-us.css.scss";
 
 .btn-primary {
   background-color: $fp-alternative-color;
@@ -43,8 +44,4 @@ body {
 
 .bg-block {
   min-height: 250px;
-}
-
-.partners {
-  @include retina('../images/bg-partners.png', 2, cover, center center no-repeat);
 }
