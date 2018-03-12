@@ -19,7 +19,7 @@ navigation : Home
         .col-sm-4
         .col-sm-4.col-xs-6
           %p.link-to-bottom
-            %a.js-scrollTo{:href => "#FinPartners"} Who is Fin Partners
+            %a.js-scrollTo.white{:href => "#FinPartners"} Who is Fin Partners
         .col-sm-4.col-xs-6
           %ul.list-inline.text-right
             %li Follow us
@@ -34,8 +34,7 @@ navigation : Home
 .container
   .row.row-eq-height.bg-white#FinPartners
 
-    .col-md-6.col-md-push-6.partners
-      %p Lorem ipsum...
+    .col-md-6.col-md-push-6.partners.bg-block
 
     .col-md-6.col-md-pull-6.block
       %h1= t("intro.title")
@@ -47,7 +46,7 @@ navigation : Home
         - t("testimonies").each do |testimony|
           %li= testimony
 
-      %a.btn.btn-default{:href => "/"} Button
+      %a.btn.btn-primary{:href => "/"} About us
 
   .row.bg-fp.block
 
@@ -55,12 +54,15 @@ navigation : Home
       %h1.text-center.white What we do ?
     .clearfix
     .col-md-4.text-center.white
+      %img.img-responsive.m-a.mt-15{:src => image_path('executive_search_icon.png'), :srcset => " #{image_path('executive_search_icon@2x.png')} 2x, #{image_path('executive_search_icon.png')} 1x"}/
       %h2 Executive search
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     .col-md-4.text-center.white
+      %img.img-responsive.m-a.mt-15{:src => image_path('interim_consultants_icon.png'), :srcset => " #{image_path('interim_consultants_icon@2x.png')} 2x, #{image_path('interim_consultants_icon.png')} 1x"}/
       %h2 Interim Consultants
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     .col-md-4.text-center.white
+      %img.img-responsive.m-a.mt-15{:src => image_path('strategic_insight_icon.png'), :srcset => " #{image_path('strategic_insight_icon@2x.png')} 2x, #{image_path('strategic_insight_icon.png')} 1x"}/
       %h2 Strategic Insight
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 
@@ -82,7 +84,7 @@ navigation : Home
               .col-xs-12
                 .thumbnail.adjust1
                   .col-md-2.col-sm-2.col-xs-12
-                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                    %img.media-object.img-circle.img-responsive{:src => "http://placehold.it/100"}/
                   .col-md-10.col-sm-10.col-xs-12
                     .caption
                       %p.text-info.lead.adjust2 I can't wait to test this out.
@@ -100,7 +102,7 @@ navigation : Home
               .col-xs-12
                 .thumbnail.adjust1
                   .col-md-2.col-sm-2.col-xs-12
-                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                    %img.media-object.img-circle.img-responsive{:src => "http://placehold.it/100"}/
                   .col-md-10.col-sm-10.col-xs-12
                     .caption
                       %p.text-info.lead.adjust2 I can't wait to test this out.
@@ -118,7 +120,7 @@ navigation : Home
               .col-xs-12
                 .thumbnail.adjust1
                   .col-md-2.col-sm-2.col-xs-12
-                    %img.media-object.img-rounded.img-responsive{:src => "http://placehold.it/100"}/
+                    %img.media-object.img-circle.img-responsive{:src => "http://placehold.it/100"}/
                   .col-md-10.col-sm-10.col-xs-12
                     .caption
                       %p.text-info.lead.adjust2 I can't wait to test this out.

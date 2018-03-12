@@ -1,12 +1,25 @@
-@import "../libs/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 // @import "../libs/font-awesome/web-fonts-with-css/scss/fontawesome";
 // @import "../libs/vegas/dist/vegas.min.css";
+@import "./retina.scss";
 @import "./mixins.css.scss";
 @import "./vegas.css.scss";
 
 @import "./icons-fp.css.scss";
 @import "./navbar.css.scss";
 @import "./home.css.scss";
+
+.btn-primary {
+  background-color: $fp-alternative-color;
+  color: $white-color;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  @include box-shadow(rgba($black-color, 0.35) 0px 2px 5px);
+  &:hover{
+    background-color: darken($fp-alternative-color, 15%);
+  }
+}
 
 body {
   background-color: $background-color;
@@ -28,6 +41,10 @@ body {
   padding: 30px 45px 45px;
 }
 
+.bg-block {
+  min-height: 250px;
+}
+
 .partners {
-  background-color: red;
+  @include retina('../images/bg-partners.png', 2, cover, center center no-repeat);
 }

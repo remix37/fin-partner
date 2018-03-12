@@ -5,6 +5,7 @@
 .navbar-default {
 	background-color: $white-color;
 	border: none;
+	@include box-shadow(rgba($black-color, 0.15) 0px 2px 5px);
 }
 
 .navbar-brand {

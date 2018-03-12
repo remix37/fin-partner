@@ -8,9 +8,9 @@
 $(function() {
   $("#home").vegas({
       slides: [
-          { src: "./images/slide1.jpg" },
-          { src: "./images/slide2.jpg" },
-          { src: "./images/slide3.jpg" }
+          { src: "./images/slide-1.jpg" },
+          { src: "./images/slide-2.jpg" },
+          { src: "./images/slide-3.jpg" }
       ]
   });
 });
