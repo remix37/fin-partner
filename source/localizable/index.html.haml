@@ -15,23 +15,29 @@ navigation : Home
           %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
 
 
-    .container-fluid
       .row.home-bottom
-        .col-md-4
-        .col-md-4
-          %p.text-center Who is Fin Partners
-        .col-md-4
-          %p.pull-left Follow us
-          %ul.list-inline
+        .col-sm-4
+        .col-sm-4.col-xs-6
+          %p.link-to-bottom
+            %a.js-scrollTo{:href => "#FinPartners"} Who is Fin Partners
+        .col-sm-4.col-xs-6
+          %ul.list-inline.text-right
+            %li Follow us
             %li
-              Facebook
-            %li Linkedin
-            %li Twitter
+              %span.fp-facebook
+            %li
+              %span.fp-twitter
+            %li
+              %span.fp-linkedin
 
 
 .container
-  .row.row-eq-height.bg-white
-    .col-md-6
+  .row.row-eq-height.bg-white#FinPartners
+
+    .col-md-6.col-md-push-6.partners
+      %p Lorem ipsum...
+
+    .col-md-6.col-md-pull-6.block
       %h1= t("intro.title")
 
       - t("intro.description").each do |text|
@@ -43,13 +49,10 @@ navigation : Home
 
       %a.btn.btn-default{:href => "/"} Button
 
-    .col-md-6.partners
-
-
-  .row{:style => "background: blue;"}
+  .row.bg-fp.block
 
     .col-md-12
-      %h1.text-center What we do ?
+      %h1.text-center.white What we do ?
     .clearfix
     .col-md-4.text-center.white
       %h2 Executive search
@@ -62,7 +65,7 @@ navigation : Home
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 
 
-  .row.bg-white
+  .row.bg-white.block
     .col-md-12
       %h1.text-center Testimonies
 

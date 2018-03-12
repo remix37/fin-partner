@@ -24,9 +24,9 @@ $assetPath : "../images/overlay";
 .vegas-timer {
     top: auto;
     bottom: 0;
-    height: 5px;
+    height: 3px;
     position: absolute;
-    z-index: 9999;
+    z-index: 1;
 }
 
 .vegas-timer-progress {

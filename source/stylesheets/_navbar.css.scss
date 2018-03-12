@@ -1,0 +1,28 @@
+.navbar-toggle {
+	margin: 28px 28px 28px 0;
+}
+
+.navbar-default {
+	background-color: $white-color;
+	border: none;
+}
+
+.navbar-brand {
+  height: auto !important;
+  margin-right: 35px;
+}
+
+.navbar-nav > li > a{
+	@media screen and (min-width: $screen-sm-min) {
+  	padding: 35px 15px;
+	}
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background: none !important;
+  border-bottom: 3px solid $fp-alternative-color;
+}
