@@ -1,0 +1,81 @@
+---
+title : Fin Partners - Global leader in SAP executive search and Talent Advisory
+---
+
+.contact-us
+  .container.banner
+    .row
+      .col-md-4.col-md-offset-4.white
+
+        .big-title.contact.text-center
+          %h2 Contacter nous
+
+.container
+  .row.bg-white.block
+    .col-md-6
+      %form
+
+        .form-group
+          %label{:for => "Profil"} Email address
+          %select.form-control#Profil
+            %option Candidate
+            %option Compagny
+
+        .row
+          .col-xs-6
+            .form-group
+              %input#Name.form-control{:placeholder => "First name", :type => "text"}/
+
+          .col-xs-6
+            .form-group
+              %input#LastName.form-control{:placeholder => "Last name", :type => "text"}/
+
+        .clearfix
+
+        .row
+          .col-xs-6
+            .form-group
+              %input#Country.form-control{:placeholder => "Country", :type => "text"}/
+
+          .col-xs-6
+            .form-group
+              %input#Email.form-control{:placeholder => "Email", :type => "email"}/
+
+        .form-group
+          %input#Compagny.form-control{:placeholder => "Compagny", :type => "text"}/
+
+        .form-group
+          %textarea.form-control{:placeholder => "Tell us how we can help you", :rows => "3"}
+
+    .col-md-6
+      %form
+
+        .form-group
+          %label{:for => ""} What subject are you interested in?
+
+          .checkbox
+            %label
+              %input{:type => "checkbox", :value => ""}/
+              Executive Search
+
+          .checkbox
+            %label
+              %input{:type => "checkbox", :value => ""}/
+              Interim Consulting
+
+          .checkbox
+            %label
+              %input{:type => "checkbox", :value => ""}/
+              SAP Market Insight
+
+          .checkbox
+            %label
+              %input{:type => "checkbox", :value => ""}/
+              Talent Advisory
+
+
+        .form-group
+          %label{:for => "File"} Join your CV/resume
+          %input#File{:type => "file"}/
+
+        %button.btn.btn-primary{:type => "Submit"} Submit

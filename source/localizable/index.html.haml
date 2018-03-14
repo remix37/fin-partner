@@ -1,19 +1,23 @@
 ---
 title : Fin Partners - Global leader in SAP executive search and Talent Advisory
-navigation : Home
 ---
 
 #home
   .home-inner
-    .container.pt-100.pb-100
+    .container.banner
       .row
         .col-md-12.white
-          %h1 Fin Partners
-          %h2 Transparency is the Key.
 
-          %p We help companies hire great SAP Consultants.
-          %p The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
+          %img.img-responsive.hidden-sm.hidden-xs{:src => image_path('home/big-title.png'), :srcset => " #{image_path('home/big-title@2x.png')} 2x, #{image_path('home/big-title.png')} 1x", :title => "Fin Partners : The Transparency is the key"}/
 
+          %h1.ml-30.mr-30.visible-sm.visible-xs
+            Fin Partners
+          %h2.ml-30.mr-30.visible-sm.visible-xs
+            The transparency is the Key.
+
+          .banner-inner
+            - t("home.intro").each do |text|
+              %p= text
 
       .row.home-bottom
         .col-sm-4
@@ -32,7 +36,7 @@ navigation : Home
 
 
 .container
-  .row.row-eq-height.bg-white#FinPartners{:style => "min-height: 500px;"}
+  .row.row-eq-height.bg-white#FinPartners.min-height-block
 
     .col-md-6.col-md-push-6.partners.bg-block
 

@@ -1,0 +1,5 @@
+.what-we-do {
+  padding-top: 70px;
+  background-color: $fp-color;
+  @include retina('../images/what-we-do/bg-what-we-do.png', 2, cover, top right no-repeat);
+}

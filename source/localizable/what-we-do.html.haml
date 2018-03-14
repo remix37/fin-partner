@@ -1,9 +1,33 @@
 ---
-title : Fin Partner - Global leader in SAP executive search and Talent Advisory
-navigation : What we do
+title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 ---
 
+.what-we-do
+  .container.banner
+    .row
+      .col-md-8.white
+
+        .big-title
+          %h2= t("what-we-do.title")
+
+      .col-md-12.banner-inner
+        - t("what-we-do.description.paragraph1").each do |text|
+          %p= text
+
 .container
-  .col-md-12
-    %h1.text-center What we do
-    %h2.text-center Transparency is the Key.
+  .row.bg-fp.block
+
+    .col-md-4.col-md-offset-2.text-center.white
+      %img.img-responsive.m-a.mt-15{:src => image_path('home/executive_search_icon.png'), :srcset => " #{image_path('home/executive_search_icon@2x.png')} 2x, #{image_path('home/executive_search_icon.png')} 1x"}/
+      %p.mt-30 Executive search :
+      %h2.mt-15 Flat fee
+    .col-md-4.text-center.white
+      %img.img-responsive.m-a.mt-15{:src => image_path('what-we-do/freelance_icon.png'), :srcset => " #{image_path('what-we-do/freelance_icon@2x.png')} 2x, #{image_path('what-we-do/freelance_icon.png')} 1x"}/
+      %p.mt-30 Freelance :
+      %h2.mt-15 12%
+
+    .clearfix
+
+    .col-md-8.col-md-offset-2.text-center.white.mt-30
+      - t("what-we-do.description.paragraph2").each do |text|
+        %p= text

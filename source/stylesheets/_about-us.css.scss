@@ -3,3 +3,15 @@
   background-color: $fp-color;
   @include retina('../images/about-us/bg-about-us.png', 2, cover, center center no-repeat);
 }
+
+.executive-search {
+  @include retina('../images/about-us/bg-feature-1.png', 2, cover, top center no-repeat);
+}
+
+.interim-consulting {
+  @include retina('../images/about-us/bg-feature-2.png', 2, cover, center center no-repeat);
+}
+
+.strategic-insights {
+  @include retina('../images/about-us/bg-feature-3.png', 2, cover, center center no-repeat);
+}

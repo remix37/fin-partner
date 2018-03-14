@@ -1,52 +1,45 @@
 ---
-title : Fin Partner - Global leader in SAP executive search and Talent Advisory
-navigation : About us
+title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 ---
 
 .about-us
-  .container.pt-100.pb-100
+  .container.banner
     .row
-      .col-md-12.white
-        %h1= t("about-us.title")
+      .col-md-8.white
+
+        .big-title
+          %h2= t("about-us.title")
+
+      .col-md-12.banner-inner
         - t("about-us.description").each do |text|
           %p= text
 
-    .row.home-bottom
-      .col-sm-4
-      .col-sm-4.col-xs-6
-        %p.link-to-bottom
-          %a.js-scrollTo.white{:href => "#FinPartners"} Who is Fin Partners
-      .col-sm-4.col-xs-6
-        %ul.list-inline.text-right
-          %li Follow us
-          %li
-            %span.fp-facebook
-          %li
-            %span.fp-twitter
-          %li
-            %span.fp-linkedin
 
 .container
-  .row.row-eq-height.bg-white#FinPartners{:style => "min-height: 500px;"}
-    .col-md-6.col-md-push-6.partners.bg-block
+  .row.row-eq-height.bg-white.min-height-block
+    .col-md-6.col-md-push-6.executive-search.bg-block
     .col-md-6.col-md-pull-6.block
       %h1= t("about-us.features.feature1.title")
       - t("about-us.features.feature1.description").each do |text|
         %p= text
       %a.btn.btn-primary{:href => "/"} About us
 
-  .row.row-eq-height.bg-white#FinPartners{:style => "min-height: 500px;"}
-    .col-md-6.partners.bg-block
+  .row.row-eq-height.bg-white.min-height-block
+    .col-md-6.interim-consulting.bg-block
     .col-md-6.block
       %h1= t("about-us.features.feature2.title")
       - t("about-us.features.feature2.description").each do |text|
         %p= text
       %a.btn.btn-primary{:href => "/"} About us
 
-  .row.row-eq-height.bg-white#FinPartners{:style => "min-height: 500px;"}
-    .col-md-6.col-md-push-6.partners.bg-block
+  .row.row-eq-height.bg-white.min-height-block
+    .col-md-6.col-md-push-6.strategic-insights.bg-block
     .col-md-6.col-md-pull-6.block
       %h1= t("about-us.features.feature3.title")
       - t("about-us.features.feature3.description").each do |text|
         %p= text
+      %ul
+        - t("about-us.features.feature3.list").each do |text|
+          %li= text
+
       %a.btn.btn-primary{:href => "/"} About us

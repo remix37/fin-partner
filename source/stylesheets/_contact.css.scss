@@ -1,0 +1,15 @@
+.contact-us {
+  padding-top: 70px;
+  background-color: $fp-color;
+  @include retina('../images/contact/bg-contact.png', 2, cover, center center no-repeat);
+}
+
+.big-title.contact {
+  padding: 35px 35px 0;
+  margin: 0;
+  @media screen and (min-width: $screen-md-min) {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+  }
+}

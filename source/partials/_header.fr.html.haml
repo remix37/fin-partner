@@ -13,19 +13,23 @@
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li{ nav_active('fr/index.html') }
-          = link_to "Accueil", "/fr", title: "Home"
+        -# %li{ nav_active('fr/index.html') }
+        -#   = link_to "Accueil", "/fr", title: "Home"
 
         %li{ nav_active('fr/about-us.html') }
-          = link_to "À propos de nous", "/fr/about-us.html", title: "About us"
+          = link_to "À propos de nous", "/fr/about-us.html", title: "À propos de nous"
 
         %li{ nav_active('fr/what-we-do.html') }
-          = link_to "Nos missions", "/fr/what-we-do.html", title: "What we do"
+          = link_to "Nos missions", "/fr/what-we-do.html", title: "Nos missions"
+
+        %li{ nav_active('fr/contact-us.html') }
+          = link_to "Nous contacter", "/fr/contact-us.html", title: "Nous contacter"
 
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Français
+            %img{:src => image_path('flags/flag-fr.png'), :srcset => " #{image_path('flags/flag-fr@2x.png')} 2x, #{image_path('flags/flag-fr.png')} 1x"}/
+            %span.hidden-sm &nbsp;Français
             %span.caret
           %ul.dropdown-menu
             %li

@@ -13,8 +13,8 @@
     / Collect the nav links, forms, and other content for toggling
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li{ nav_active('index.html') }
-          = link_to "Home", "/", title: "Home"
+        -# %li{ nav_active('index.html') }
+        -#   = link_to "Home", "/", title: "Home"
 
         %li{ nav_active('about-us.html') }
           = link_to "About us", "/about-us.html", title: "About us"
@@ -22,10 +22,14 @@
         %li{ nav_active('what-we-do.html') }
           = link_to "What we do", "/what-we-do.html", title: "What we do"
 
+        %li{ nav_active('contact-us.html') }
+          = link_to "Contact us", "/contact-us.html", title: "Contact us"
+
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            English
+            %img{:src => image_path('flags/flag-uk.png'), :srcset => " #{image_path('flags/flag-uk@2x.png')} 2x, #{image_path('flags/flag-uk.png')} 1x"}/
+            %span.hidden-sm &nbsp;English
             %span.caret
           %ul.dropdown-menu
             %li
