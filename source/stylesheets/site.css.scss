@@ -1,9 +1,11 @@
 @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap.scss";
-// @import "../libs/font-awesome/web-fonts-with-css/scss/fontawesome";
-// @import "../libs/vegas/dist/vegas.min.css";
+
 @import "./retina.scss";
 @import "./mixins.css.scss";
+
 @import "./vegas.css.scss";
+@import "./owl.carousel.css.scss";
+@import "./owl.theme.default.css.scss";
 
 @import "./icons-fp.css.scss";
 @import "./navbar.css.scss";
@@ -12,93 +14,4 @@
 @import "./what-we-do.css.scss";
 @import "./contact.css.scss";
 
-
-.btn-primary {
-  background-color: $fp-alternative-color;
-  color: $white-color;
-  border: none;
-  text-transform: uppercase;
-  margin-top: 15px;
-  padding: 15px 20px;
-  @include box-shadow(rgba($black-color, 0.35) 0px 2px 5px);
-  &:hover{
-    background-color: darken($fp-alternative-color, 15%);
-  }
-}
-
-body {
-  background-color: $background-color;
-}
-
-.white {
-  color: white;
-}
-
-.bg-white {
-  background-color: $white-color;
-}
-
-.bg-fp {
-  background-color: $fp-color;
-}
-
-.block {
-  padding: 30px 45px 45px;
-}
-
-.bg-block {
-  min-height: 250px;
-}
-
-.min-height-block {
-  min-height: 500px;
-}
-
-.banner {
-  padding: 100px 0 50px;
-
-  @media screen and (max-width: $screen-sm-max) {
-    padding-top: 50px;
-  }
-
-  h1, h2 {
-
-  }
-
-  h1 {
-    font-size: 4em;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-family: "Playfair Display";
-    font-size: 2.4em;
-    font-style: italic;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
-
-}
-
-.big-title {
-  margin: 0 15px;
-  text-shadow: 0 2px 10px rgba($black-color, 0.35);
-  @media screen and (min-width: $screen-md-min) {
-    border: 3px solid $white-color;
-    padding: 35px 70px 55px;
-    margin-right: 150px;
-  }
-}
-
-.banner-inner {
-  background: $fp-color;
-  color: $white-color;
-  width: auto;
-  padding: 25px 30px 15px;
-  margin: 0 30px;
-  @media screen and (min-width: $screen-md-min) {
-    margin: 0 100px;
-    position: relative;
-    bottom: 50px;
-	}
-}
+@import "./general.css.scss";

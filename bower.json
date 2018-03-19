@@ -14,6 +14,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "vegas": "^2.4.0"
+    "vegas": "https://jaysalvat.github.io/vegas/releases/latest/vegas.js",
+    "owl.carousel": "http://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"
   }
 }
