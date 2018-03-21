@@ -1,10 +1,10 @@
 ---
 fr:
   home:
+    title: "Qui est Fin Partners ?"
     intro:
       - Nous aidons les entreprises à embaucher de grands consultants SAP.
       - L'industrie SAP est en train de changer. Trouver le meilleur consultant SAP est un véritable défi.
-    title: "Qui est Fin Partners ?"
     description:
       - Établi à Londres en 2018, Fin Partners est devenu un nom de confiance pour les clients et les candidats potentiels. Nous aidons les entreprises à embaucher de grands consultants seniors SAP.
       - Nos bureaux sont stratégiquement situés à Londres et en Colombie, en France.
@@ -19,23 +19,20 @@ fr:
 
   about-us:
     title: "Pourquoi sommes-nous différents des autres agences de recrutement de cadres ?"
-    description:
+    intro:
       - Nous sommes la seule Executive Search focalisée sur SAP. Nous avons une connaissance approfondie du marché SAP que nous couvrons. Nos consultants sont en mesure d'exécuter la recherche plus efficacement et de réussir.
       - Nous avons un réseau mondial et des relations profondes avec les clients et les candidats qui nous permettent d'accéder à l'information sur les talents rapidement et efficacement, donnant à nos clients des tendances et des idées pour les aider à prendre leur décision.
 
     features:
-      feature1:
-        title: "Executive Search"
+      - title: "Executive Search"
         description:
           - "Fin Partners a été créée pour tirer parti d'un marché mature: SAP."
           - Fin Partners a utilisé un processus de recherche de cadres latéral complet pour aider les clients à recruter et recruter des cadres dirigeants SAP en Europe et en Amérique du Sud. La profondeur des connaissances et du réseau de notre équipe nous permet d'identifier et de sécuriser des consultants senior SAP de haut niveau pour un large éventail de clients de premier ordre.
-      feature2:
-        title: "Interim Consulting"
+      - title: "Interim Consulting"
         description:
           - La rotation ou la succession des dirigeants peut être un véritable défi pour toute organisaion. Les freelancers senior de SAP sont en mesure d'offrir des conseils indépendants et d'acquérir des compétences pendant un certain temps, sans l'engagement d'une embauche à long terme. Nos freelencers peuvent vous assister dans vos projets de cycle complet SAP.
           - En partenariat avec les partenaires de Fin, les clients ont accès à un réseau de consultants SAP senior tels que SAP Hana, SAP CS, SAP FIORI, SAP C4S ...
-      feature3:
-        title: "Strategic Insights"
+      - title: "Strategic Insights"
         description:
           - Fin Partners bénéficie d'un réel avantage concurrentiel par une meilleure compréhension de l'écosystème SAP avec segment, secteur ou région.
           - "Nos offres stratégiques sur mesure sont :"
@@ -44,12 +41,11 @@ fr:
           - Analyse stratégique et recommandation
 
   what-we-do:
-    title: "Notre approche en un seul mot: Transparence"
+    title: "Notre approche en un seul mot : Transparence"
+    intro:
+      - L'industrie du Recrutement est en train de changer. Nous sommes témoins du démarrage en pensant qu'ils peuvent prendre en charge l'industrie du recrutement. Pourquoi ? La raison en est les frais, les frais de cachette.
+      - Chez Fin, nous travaillons sur le succès. Pas de cachette. Nos connaissances et notre réseau du marché SAP nous permettent d'atteindre des honoraires sans frais.
     description:
-      paragraph1:
-        - L'industrie du Recrutement est en train de changer. Nous sommes témoins du démarrage en pensant qu'ils peuvent prendre en charge l'industrie du recrutement. Pourquoi ? La raison en est les frais, les frais de cachette.
-        - Chez Fin, nous travaillons sur le succès. Pas de cachette. Nos connaissances et notre réseau du marché SAP nous permettent d'atteindre des honoraires sans frais.
-      paragraph2:
-        - Client et Candidats nous voulons être partenaires depuis longtemps.
-        - Les consultants ont la réputation de facturer plus de 20% ...
-        - Votre budget est notre clé. Savoir ce que vous allez dépenser dans le recrutement est très
+      - Client et Candidats nous voulons être partenaires depuis longtemps.
+      - Les consultants ont la réputation de facturer plus de 20% ...
+      - Votre budget est notre clé. Savoir ce que vous allez dépenser dans le recrutement est très

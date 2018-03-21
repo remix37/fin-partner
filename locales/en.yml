@@ -1,10 +1,10 @@
 ---
 en:
   home:
+    title: "Who is Fin Partners?"
     intro:
       - We help companies hire great SAP Consultants.
       - The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
-    title: "Who is Fin Partners ?"
     description:
       - Established in London in 2018, Fin Partners has become a trusted name for clients and potential candidates alike. We help companies hire great SAP seniors Consultants.
       - Our offices are strategically located in London and Colombia, France.
@@ -19,25 +19,22 @@ en:
 
   about-us:
     title: "Why we are different from other Executive Search Firms?"
-    description:
+    intro:
       - We are the only Executive Search focusing in SAP. We have a deep knowledge of the SAP market we cover. Our consultants are able to execute search more efficiently and make successful.
       - We have a global network and deep relationships with both clients and Candidates that allow us to access information on talents quickly and efficiently, giving our clients trends and insights to help them for their decision.
 
     features:
-      feature1:
-        title: "Executive Search"
+      - title: "Executive Search"
         description:
           - "Fin Partners was founded in order to take advantage of a mature market: SAP."
           - Fin Partners has employed a comprehensive lateral executive search process to help clients source and recruit SAP executive talent throughout Europe and South America. Our depth of our team’s knowledge and network allow us to identify and secure high –calibre SAP senior Consultants for a wide range of blue chip clients.
 
-      feature2:
-        title: "Interim Consulting"
+      - title: "Interim Consulting"
         description:
           - The executive turnover or succession can be a real challenge for any organisaion. Senior SAP freelancers are able to offer independent advice and learddership for a time being, period, without the commitment of a long- term hire. Our freelencers can assist you for your SAP full cycle projects.
           - By Partnering with Fin partners, clients have access to a network of senior SAP consultants such as SAP Hana, SAP CS, SAP FIORI, SAP C4S…
 
-      feature3:
-        title: "Strategic Insights"
+      - title: "Strategic Insights"
         description:
           - Fin Partners to have a real competitive advantage by a better understanding of the SAP Eco-system with segment, sector or region.
           - "Our bespoke Strategic insight offerings are:"
@@ -47,11 +44,10 @@ en:
 
   what-we-do:
     title: "Our approach in only one word: Transparency"
+    intro:
+      - The Recruitment industry is changing. We are witness of start up thinking that they can take over the recruitment industry. Why? The reason is fees, hiding fees.
+      - At Fin partner, we are working on the success.  Not front-fees hiding. Our knowledge and network of the SAP market allow us to without hight fees.
     description:
-      paragraph1:
-        - The Recruitment industry is changing. We are witness of start up thinking that they can take over the recruitment industry. Why? The reason is fees, hiding fees.
-        - At Fin partner, we are working on the success.  Not front-fees hiding. Our knowledge and network of the SAP market allow us to without hight fees.
-      paragraph2:
-        - Client and Candidates we want to be partners for a long time.
-        - Consultancies have the reputation to charge more 20 %...
-        - Your budget is our key. Knowing what you will spend in recruiting is very
+      - Client and Candidates we want to be partners for a long time.
+      - Consultancies have the reputation to charge more 20 %...
+      - Your budget is our key. Knowing what you will spend in recruiting is very

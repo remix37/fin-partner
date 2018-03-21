@@ -11,7 +11,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
           %h2= t("about-us.title")
 
       .col-md-12.banner-inner
-        - t("about-us.description").each do |text|
+        - t("about-us.intro").each do |text|
           %p= text
 
 
@@ -19,27 +19,35 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
   .row.row-eq-height.bg-white.min-height-block
     .col-md-6.col-md-push-6.executive-search.bg-block
     .col-md-6.col-md-pull-6.block
-      %h1= t("about-us.features.feature1.title")
-      - t("about-us.features.feature1.description").each do |text|
-        %p= text
+
+      - t("about-us.features").drop(0).first(1).each do |feature|
+        %h3= feature[:title]
+        - feature[:description].each do |text|
+          %p= text
+
       %a.btn.btn-primary{:href => "/"} About us
 
   .row.row-eq-height.bg-white.min-height-block
     .col-md-6.interim-consulting.bg-block
     .col-md-6.block
-      %h1= t("about-us.features.feature2.title")
-      - t("about-us.features.feature2.description").each do |text|
-        %p= text
+
+      - t("about-us.features").drop(1).first(1).each do |feature|
+        %h3= feature[:title]
+        - feature[:description].each do |text|
+          %p= text
+
       %a.btn.btn-primary{:href => "/"} About us
 
   .row.row-eq-height.bg-white.min-height-block
     .col-md-6.col-md-push-6.strategic-insights.bg-block
     .col-md-6.col-md-pull-6.block
-      %h1= t("about-us.features.feature3.title")
-      - t("about-us.features.feature3.description").each do |text|
-        %p= text
-      %ul
-        - t("about-us.features.feature3.list").each do |text|
+
+      - t("about-us.features").drop(2).first(1).each do |feature|
+        %h3= feature[:title]
+        - feature[:description].each do |text|
+          %p= text
+        %ul
+        - feature[:list].each do |text|
           %li= text
 
       %a.btn.btn-primary{:href => "/"} About us
