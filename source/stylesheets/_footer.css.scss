@@ -1,0 +1,8 @@
+.footer {
+  @include retina('../images/bg-footer.png', 2, cover, center center no-repeat);
+}
+
+.copyright{
+  background-color: rgba($black-color, 0.50);
+  padding: 15px 15px 5px;
+}
