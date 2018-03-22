@@ -1,19 +1,19 @@
 ---
-en:
+es:
 
   languages:
-    - English
-    - French
-    - Spain
+    - Inglés
+    - Francés
+    - España
 
   menu:
-    - About us
-    - What we do
-    - Contact us
+    - A propósito de nosotros
+    - Qué hacemos
+    - Contáctanos
 
   flag:
-    title: English
-    img: flag-uk
+    title: España
+    img: flag-es
 
   home:
     title: "Who is Fin Partners?"

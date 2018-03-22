@@ -19,24 +19,37 @@
         - if lang == :en
 
           %li{ nav_active('about-us.html') }
-            = link_to "About us", "/about-us.html", title: "About us"
+            = link_to "/about-us.html" do
+              - t("menu").drop(0).first(1).each do |nav|
+                = nav
 
           %li{ nav_active('what-we-do.html') }
-            = link_to "What we do", "/what-we-do.html", title: "What we do"
+            = link_to "/what-we-do.html" do
+              - t("menu").drop(1).first(1).each do |nav|
+                = nav
 
           %li{ nav_active('contact-us.html') }
-            = link_to "Contact us", "/contact-us.html", title: "Contact us"
+            = link_to "/contact-us.html" do
+              - t("menu").drop(2).first(1).each do |nav|
+                = nav
 
         - else
 
-          %li{ nav_active('fr/about-us.html') }
-            = link_to "À propos de nous", "/fr/about-us.html", title: "À propos de nous"
+          %li{ nav_active("#{I18n.locale}/about-us.html") }
+            = link_to "/#{I18n.locale}/about-us.html" do
+              - t("menu").drop(0).first(1).each do |nav|
+                = nav
 
-          %li{ nav_active('fr/what-we-do.html') }
-            = link_to "Nos missions", "/fr/what-we-do.html", title: "Nos missions"
+          %li{ nav_active("#{I18n.locale}/what-we-do.html") }
+            = link_to "/#{I18n.locale}/what-we-do.html" do
+              - t("menu").drop(1).first(1).each do |nav|
+                = nav
 
-          %li{ nav_active('fr/contact-us.html') }
-            = link_to "Nous contacter", "/fr/contact-us.html", title: "Nous contacter"
+          %li{ nav_active("#{I18n.locale}/contact-us.html") }
+            = link_to "/#{I18n.locale}/contact-us.html" do
+              - t("menu").drop(2).first(1).each do |nav|
+                = nav
+
 
       %ul.nav.navbar-nav.navbar-right
         %li.dropdown
@@ -45,8 +58,10 @@
 
             - if lang == :en
               %img{:src => image_path('flags/flag-uk.png'), :srcset => " #{image_path('flags/flag-uk@2x.png')} 2x, #{image_path('flags/flag-uk.png')} 1x"}/
-            - else
+            - elsif lang == :fr
               %img{:src => image_path('flags/flag-fr.png'), :srcset => " #{image_path('flags/flag-fr@2x.png')} 2x, #{image_path('flags/flag-fr.png')} 1x"}/
+            - else
+              %img{:src => image_path('flags/flag-es.png'), :srcset => " #{image_path('flags/flag-es@2x.png')} 2x, #{image_path('flags/flag-es.png')} 1x"}/
 
             %span.hidden-sm
               = t("flag.title")
@@ -55,10 +70,19 @@
 
           %ul.dropdown-menu
             %li
-              = link_to clean_from_i18n(current_page.url) do
-                - t("languages").drop(0).first(1).each do |lang|
-                  = lang
+              - if clean_from_i18n(current_page.url) == ""
+                %a{:href => "/"}
+                  - t("languages").drop(0).first(1).each do |lang|
+                    = lang
+              - else
+                = link_to "#{clean_from_i18n(current_page.url)}" do
+                  - t("languages").drop(0).first(1).each do |lang|
+                    = lang
             %li
               = link_to path(current_page.url, lang: :fr) do
                 - t("languages").drop(1).first(1).each do |lang|
+                  = lang
+            %li
+              = link_to path(current_page.url, lang: :es) do
+                - t("languages").drop(2).first(1).each do |lang|
                   = lang

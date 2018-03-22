@@ -6,6 +6,11 @@ fr:
     - Français
     - Espagnol
 
+  menu:
+    - À propos de nous
+    - Nos missions
+    - Nous contacter
+
   flag:
     title: Français
     img: flag-fr

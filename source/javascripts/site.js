@@ -10,9 +10,9 @@ $(function() {
   // Vegas
   $("#home").vegas({
       slides: [
-          { src: "./images/home/slide-1.jpg" },
-          { src: "./images/home/slide-2.jpg" },
-          { src: "./images/home/slide-3.jpg" }
+          { src: "../images/home/slide-1.jpg" },
+          { src: "../images/home/slide-2.jpg" },
+          { src: "../images/home/slide-3.jpg" }
       ]
   });
 
