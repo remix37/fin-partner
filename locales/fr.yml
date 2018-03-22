@@ -1,5 +1,15 @@
 ---
 fr:
+
+  languages:
+    - Anglais
+    - Français
+    - Espagnol
+
+  flag:
+    title: Français
+    img: flag-fr
+
   home:
     title: "Qui est Fin Partners ?"
     intro:

@@ -1,5 +1,15 @@
 ---
 en:
+
+  languages:
+    - English
+    - French
+    - Spain
+
+  flag:
+    title: English
+    img: flag-uk
+
   home:
     title: "Who is Fin Partners?"
     intro:

@@ -3,6 +3,7 @@
 
 activate :livereload
 activate :i18n
+activate :directory_indexes
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -18,7 +19,7 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
-page '/fr/*', layout: 'layout.fr'
+# page '/fr/*', layout: 'layout.fr'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
@@ -39,15 +40,40 @@ helpers do
   def nav_active(path)
     current_page.path == path ? {:class => "active"} : {}
   end
+
+  #
+  # returns the correct path in the current locale
+  # @example
+  # = link_to "bar", url("foo/bar.html")
+  #
+  def path(url, options = {})
+   lang = options[:lang] || I18n.locale.to_s
+
+   if lang.to_s == 'de'
+     prefix = ''
+   else
+     prefix = "/#{lang}"
+   end
+
+    prefix + "/" + clean_from_i18n(url)
+  end
+
+  # removes an i18n lang code from url if its present
+  def clean_from_i18n(url)
+    parts = url.split('/').select { |p| p && p.size > 0 }
+    parts.shift if langs.map(&:to_s).include?(parts[0])
+    parts.join('/')
+  end
+
 end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+end
 
 # Sprockets
 activate :sprockets
@@ -60,5 +86,3 @@ end
 Haml::TempleEngine.disable_option_validator!
 
 ignore 'libs/*'
-
-activate :directory_indexes
