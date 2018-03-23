@@ -1,0 +1,17 @@
+%html
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i", :rel => "stylesheet"}/
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/theme-default.min.css", :rel => "stylesheet", :type => "text/css"}/
+    / Use the title from a page's frontmatter if it has one
+    %title= current_page.data.title || "Fin Partners"
+    = stylesheet_link_tag "site"
+    = javascript_include_tag "site"
+  %body
+
+    = partial "partials/header.html.haml"
+    = yield
+    = partial "partials/footer.html.haml"

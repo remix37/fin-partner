@@ -19,7 +19,8 @@ page '/*.txt', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
-# page '/fr/*', layout: 'layout.fr'
+page '/contact-us.html', layout: 'contact'
+page '/*/contact-us.html', layout: 'contact'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/

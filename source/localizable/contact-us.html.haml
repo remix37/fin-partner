@@ -5,9 +5,9 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 :javascript
   window.onload = (function(){
     if(window.location.hash == '#thank-you'){
-    document.getElementById('thank-you-message').className = 'alert alert-success';
+      document.getElementById('thank-you-message').className = 'alert alert-success';
     }
-    })
+  })
 
 .contact-us
   .container.banner
@@ -32,33 +32,34 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
     .col-md-6
 
       .form-group
-        %label{:for => "Profil"} Email address
-        %select.form-control#Profil{:name => "profil"}
+        %label{:for => "Profil"}
+        %select.form-control#Profil{:name => "profil", :required => "", "data-validation" => "required"}
+          %option{:disabled => "", :selected => "selected", :value => ""} Do you are a candidate or agny ?
           %option{:value => "Candidate"} Candidate
           %option{:value => "Compagny"} Compagny
 
       .row
         .col-xs-6
           .form-group
-            %input#Name.form-control{:name => "name", :placeholder => "First name", :type => "text"}/
+            %input.form-control{:name => "name", :placeholder => "First name", :type => "text", :required => "", "data-validation" => "required"}/
 
         .col-xs-6
           .form-group
-            %input#LastName.form-control{:name => "last name", :placeholder => "Last name", :type => "text"}/
+            %input.form-control{:name => "last name", :placeholder => "Last name", :type => "text", :required => "", "data-validation" => "required"}/
 
       .clearfix
 
       .row
         .col-xs-6
           .form-group
-            %input#Country.form-control{:name => "country", :placeholder => "Country", :type => "text"}/
+            %input#country.form-control{:name => "country", :placeholder => "Country", :type => "text", :required => "", "data-validation" => "required"}/
 
         .col-xs-6
           .form-group
-            %input#Email.form-control{:name => "mail", :placeholder => "Email", :type => "email"}/
+            %input.form-control{:name => "mail", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
 
       .form-group
-        %input#Compagny.form-control{:name => "compagny", :placeholder => "Compagny", :type => "text"}/
+        %input.form-control{:name => "compagny", :placeholder => "Compagny", :type => "text", :required => "", "data-validation" => "required"}/
 
       .form-group
         %textarea.form-control{:name => "message", :placeholder => "Tell us how we can help you", :rows => "3"}
@@ -70,26 +71,29 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 
         .checkbox
           %label
-            %input{:name => "subject 1", :type => "checkbox", :value => "Executive Search"}/
+            %input{:value => "Executive Search", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
             Executive Search
 
         .checkbox
           %label
-            %input{:name => "subject 2", :type => "checkbox", :value => "Interim Consulting"}/
+            %input{:value => "Interim Consulting", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
             Interim Consulting
 
         .checkbox
           %label
-            %input{:name => "subject 3", :type => "checkbox", :value => "SAP Market Insight"}/
+            %input{:value => "SAP Market Insight", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
             SAP Market Insight
 
         .checkbox
           %label
-            %input{:name => "subject 4", :type => "checkbox", :value => "Talent Advisory"}/
+            %input{:value => "Talent Advisory", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
             Talent Advisory
 
       .form-group
         %label Join your CV/resume
-        %input{:name => "cv", :type => "file"}/
+        %input{:name => "cv", :type => "file", :required => "", "data-validation" => "mime size", "data-validation-allowing" => "pdf", "data-validation-max-size" => "2M"}/
 
       %button.btn.btn-primary{:type => "Submit"} Submit
+
+%script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"}
+= partial "partials/form-validation.html.haml"

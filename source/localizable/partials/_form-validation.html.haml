@@ -1,0 +1,24 @@
+- if lang == :en
+  :javascript
+
+    $("#country").countrySelect({
+    	defaultCountry: 'gb',
+    	preferredCountries: ['gb', 'fr', 'es']
+    });
+
+    $.validate({
+      modules : 'file'
+    });
+
+- else
+  :javascript
+
+    $("#country").countrySelect({
+    	defaultCountry: '#{I18n.locale}',
+    	preferredCountries: ['gb', 'fr', 'es']
+    });
+
+    $.validate({
+      lang : '#{I18n.locale}',
+      modules : 'file'
+    });

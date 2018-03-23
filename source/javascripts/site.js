@@ -4,6 +4,7 @@
 //= require bootstrap-sass/assets/javascripts/bootstrap.min.js
 //= require vegas/index.js
 //= require owl.carousel/index.js
+//= require country-select-js/src/js/countrySelect.js
 
 $(function() {
 

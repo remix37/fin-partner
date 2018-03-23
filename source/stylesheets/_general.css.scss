@@ -87,3 +87,13 @@ body {
     bottom: 50px;
 	}
 }
+
+// Select
+
+select.error, select.valid {
+  background-position: right 15px center !important;
+}
+
+.country-select {
+  width: 100%;
+}
