@@ -25,7 +25,12 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
       #thank-you-message.hidden{:role => "alert"}
         Thank you for contacting us we'll get back to you, as soon as we can.
   %form.row.block{:action => "https://getsimpleform.com/messages?form_api_token=461f7854117b75a3f540ef9a88b513e2", :method => "post", :enctype => "multipart/form-data"}
-    %input{:name => "redirect_to", :type => "hidden", :value => "http://localhost:4567/contact-us/#thank-you"}/
+
+    - if lang == :en
+      %input{:name => "redirect_to", :type => "hidden", :value => "https://fin-partners.netlify.com/contact-us/#thank-you"}/
+    - else
+      %input{:name => "redirect_to", :type => "hidden", :value => "https://fin-partners.netlify.com/#{I18n.locale}/contact-us/#thank-you"}/
+
     %input{:name => "_folder", :type => "hidden", :value => "quotes"}/
     %input{:name => "_spam", :type => "hidden", :value => "message"}/
 
