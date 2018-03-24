@@ -1,6 +1,5 @@
 ---
 es:
-
   languages:
     - Inglés
     - Francés
@@ -16,16 +15,15 @@ es:
     img: flag-es
 
   home:
-    title: "Who is Fin Partners?"
+    title: "¿Quién es Fin Partners?"
     intro:
-      - We help companies hire great SAP Consultants.
-      - The SAP industry is changing. Finding the best SAP Consultant is a real challenge.
+      - Ayudamos a las empresas a contratar excelentes consultores de SAP.
+      - La industria de SAP está cambiando. Encontrar el mejor Consultor de SAP es un verdadero desafío.
     description:
-      - Established in London in 2018, Fin Partners has become a trusted name for clients and potential candidates alike. We help companies hire great SAP seniors Consultants.
-      - Our offices are strategically located in London and Colombia, France.
-      - However, our operations are not restricted to these regions.
-      - Fin Partners specializes in working with a multitude of companies (consultancies and end-users).
-      - Our professionalism and knowledge the SAP ecosystem market is inparalleled.
+      - Establecido en Londres en 2018, End Partners se ha convertido en un nombre de confianza para clientes y posibles candidatos por igual. Ayudamos a las empresas a contratar grandes consultores senior de SAP.
+      - Nuestras oficinas se encuentran estratégicamente ubicadas en Londres y Colombia, Francia. Sin embargo, estas operaciones no están restringidas a estas regiones.
+      - Fin Partners se especializa en trabajar con una multitud de empresas (consultorías y usuarios finales).
+      - Nuestra profesionalidad y conocimiento del mercado de ecosistemas de SAP no tiene paralelo.
 
   testimonies:
     - testimony 1
@@ -33,36 +31,37 @@ es:
     - testimony 3
 
   about-us:
-    title: "Why we are different from other Executive Search Firms?"
+    title: "¿Por qué somos diferentes de otras empresas de búsqueda de ejecutivos?"
     intro:
-      - We are the only Executive Search focusing in SAP. We have a deep knowledge of the SAP market we cover. Our consultants are able to execute search more efficiently and make successful.
-      - We have a global network and deep relationships with both clients and Candidates that allow us to access information on talents quickly and efficiently, giving our clients trends and insights to help them for their decision.
+      - Somos el único Executive Search que se enfoca en SAP. Tenemos un conocimiento profundo del mercado SAP que cubrimos. Nuestros consultores pueden ejecutar y tener éxito.
+      - Tenemos una red global y relaciones profundas con clientes y clientes.
 
     features:
-      - title: "Executive Search"
+      - title: "Búsqueda ejecutiva"
         description:
-          - "Fin Partners was founded in order to take advantage of a mature market: SAP."
-          - Fin Partners has employed a comprehensive lateral executive search process to help clients source and recruit SAP executive talent throughout Europe and South America. Our depth of our team’s knowledge and network allow us to identify and secure high –calibre SAP senior Consultants for a wide range of blue chip clients.
-
+          - "End Partners se fundó para aprovechar un mercado maduro: SAP"
+          - End Partners ha estado reclutando un motor global de búsqueda de ejecutivos para ayudar a los talentos ejecutivos de SAP en Europa y América del Sur. Nuestro equipo directivo está liderando el camino en los consultores senior de SAP para una amplia gama de clientes de primera línea.
+          
       - title: "Interim Consulting"
         description:
-          - The executive turnover or succession can be a real challenge for any organisaion. Senior SAP freelancers are able to offer independent advice and learddership for a time being, period, without the commitment of a long- term hire. Our freelencers can assist you for your SAP full cycle projects.
-          - By Partnering with Fin partners, clients have access to a network of senior SAP consultants such as SAP Hana, SAP CS, SAP FIORI, SAP C4S…
+          - La rotación o sucesión ejecutiva puede ser un verdadero desafío para cualquier organización. Los profesionales autónomos senior de SAP pueden ofrecer asesoramiento y liderazgo independientes por un tiempo y un período, con el compromiso de un contrato a largo plazo. Nuestros profesionales independientes pueden ayudarlo con sus proyectos de ciclo completo de SAP.
+          - Al asociarse con socios de Fin, los clientes tienen acceso a una red de consultores senior de SAP como SAP Hana, SAP CS, FIORI SAP, SAP C4S ...
 
-      - title: "Strategic Insights"
+
+      - title: "Ideas estratégicas"
         description:
-          - Fin Partners to have a real competitive advantage by a better understanding of the SAP Eco-system with segment, sector or region.
-          - "Our bespoke Strategic insight offerings are:"
+          - End Partners tiene una ventaja competitiva al comprender mejor el Eco-sistema SAP con segmento, sector o región.
+          - "Nuestras ofertas de visión estratégica a medida son:"
         list:
-          - Competitor Research
-          - Strategic Analysis & Recommendation
+          - Competidor de Investigación
+          - Análisis Estratégico y Recomendación
 
   what-we-do:
-    title: "Our approach in only one word: Transparency"
+    title: "Nuestro enfoque en una palabra: Transparencia"
     intro:
-      - The Recruitment industry is changing. We are witness of start up thinking that they can take over the recruitment industry. Why? The reason is fees, hiding fees.
-      - At Fin partner, we are working on the success.  Not front-fees hiding. Our knowledge and network of the SAP market allow us to without hight fees.
+      - La industria de reclutamiento está cambiando. Estamos siendo testigos de comenzar a pensar que pueden hacerse cargo de la industria del reclutamiento. ¿Por qué? El motivo son los honorarios, las tarifas de ocultamiento.
+      - En el socio final, estamos trabajando en el éxito. No se esconden las cuotas de entrada. Nuestro conocimiento y nuestra red del mercado de SAP nos permiten sin honorarios elevados.
     description:
-      - Client and Candidates we want to be partners for a long time.
-      - Consultancies have the reputation to charge more 20 %...
-      - Your budget is our key. Knowing what you will spend in recruiting is very
+      - Cliente y candidatos que queremos ser socios durante mucho tiempo.
+      - Las consultoras tienen la reputación de cobrar más del 20% ...
+      - Tu presupuesto es nuestra clave. Saber lo que gastará en reclutar es muy

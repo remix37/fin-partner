@@ -1,0 +1,12 @@
+{
+  "name": "owl.carousel",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 14 Mar 2018 08:03:32 GMT",
+    "Content-Length": "23788",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js",
+  "_target": "*",
+  "_originalSource": "http://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"
+}
