@@ -1,5 +1,14 @@
 .navbar-toggle {
 	margin: 28px 28px 28px 0;
+	@media screen and (max-width: $screen-sm-max) {
+		margin: 20px 20px 20px 0;
+	}
+}
+
+.logo {
+	@media screen and (max-width: $screen-sm-max) {
+		height: 45px;
+	}
 }
 
 .navbar-default {
@@ -11,12 +20,21 @@
 .navbar-brand {
   height: auto !important;
   margin-right: 35px;
+	@media screen and (max-width: $screen-sm-max) {
+		margin-right: 15px;
+	}
 }
 
 .navbar-nav > li > a{
-	@media screen and (min-width: $screen-sm-min) {
+	@media screen and (min-width: $screen-md-min) {
   	padding: 35px 15px;
 	}
+
+	@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+		padding-top: 27px;
+		padding-bottom: 27px;
+	}
+
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -26,4 +44,8 @@
 .navbar-default .navbar-nav > .active > a:focus {
   background: none !important;
   border-bottom: 3px solid $fp-alternative-color;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background-color: $fp-alternative-color;
 }

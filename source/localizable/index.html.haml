@@ -4,7 +4,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 
 #home
   .home-inner
-    .container.banner
+    .container.marge-delete.banner
       .row
         .col-md-12.white
 
@@ -22,11 +22,12 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
       .row.home-bottom
         .col-sm-4
         .col-sm-4.col-xs-6
-          %p.link-to-bottom
+          %p.link-to-bottom.pl-15
             %a.js-scrollTo.white{:href => "#FinPartners"}= t("home.title")
         .col-sm-4.col-xs-6
           %ul.list-inline.text-right
             %li Follow us
+            .clearfix.visible-xs.mb-10
             %li
               %span.fp-facebook
             %li
@@ -35,7 +36,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
               %span.fp-linkedin
 
 
-.container
+.container.marge-delete
   .row.row-eq-height.bg-white#FinPartners.min-height-block
 
     .col-md-6.col-md-push-6.partners.bg-block
@@ -50,7 +51,10 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
       -#   - t("testimonies").each do |testimony|
       -#     %li= testimony
 
-      %a.btn.btn-primary{:href => "/"} About us
+      - if lang == :en
+        %a.btn.btn-primary{:href => "/about-us/"} About us
+      - else
+        %a.btn.btn-primary{:href => "/#{I18n.locale}/about-us/"} About us
 
   .row.bg-fp.block
 

@@ -5,8 +5,11 @@ $fp-color: #2b4dd5;
 $fp-alternative-color : #FF4719;
 $background-color : #EDF0FF;
 
-// Margins and Paddings
+$btn-primary-bg: $fp-color !important;
+
+// Margins
 .m-a {margin: auto;}
+.marge-delete{overflow: hidden;}
 
 $loop-list1: m p;
 $loop-list1-keys: margin padding;
@@ -44,4 +47,13 @@ $loop-step: 5;
   background: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
+}
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
 }

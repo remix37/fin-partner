@@ -7,14 +7,60 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "/"}
-        %img{:src => image_path('fin-partners_logo.png'), :srcset => " #{image_path('fin-partners_logo@2x.png')} 2x, #{image_path('fin-partners_logo.png')} 1x"}/
+
+      - if lang == :en
+        %a.navbar-brand{:href => "/"}
+          %img.logo{:src => image_path('fin-partners_logo.png'), :srcset => " #{image_path('fin-partners_logo@2x.png')} 2x, #{image_path('fin-partners_logo.png')} 1x"}/
+      - else
+        %a.navbar-brand{:href => "/#{I18n.locale}/"}
+          %img.logo{:src => image_path('fin-partners_logo.png'), :srcset => " #{image_path('fin-partners_logo@2x.png')} 2x, #{image_path('fin-partners_logo.png')} 1x"}/
+
 
     / Collect the nav links, forms, and other content for toggling
     #NavbarCollapse.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        -# %li{ nav_active('index.html') }
-        -#   = link_to "Home", "/", title: "Home"
+      %ul.nav.navbar-nav.visible-sm
+        %li.dropdown
+
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %span.glyphicon.glyphicon-menu-hamburger
+            Menu
+
+          %ul.dropdown-menu
+            - if lang == :en
+
+              %li{ nav_active('about-us.html') }
+                = link_to "/about-us.html" do
+                  - t("menu").drop(0).first(1).each do |nav|
+                    = nav
+
+              %li{ nav_active('what-we-do.html') }
+                = link_to "/what-we-do.html" do
+                  - t("menu").drop(1).first(1).each do |nav|
+                    = nav
+
+              %li{ nav_active('contact-us.html') }
+                = link_to "/contact-us.html" do
+                  - t("menu").drop(2).first(1).each do |nav|
+                    = nav
+
+            - else
+
+              %li{ nav_active("#{I18n.locale}/about-us.html") }
+                = link_to "/#{I18n.locale}/about-us.html" do
+                  - t("menu").drop(0).first(1).each do |nav|
+                    = nav
+
+              %li{ nav_active("#{I18n.locale}/what-we-do.html") }
+                = link_to "/#{I18n.locale}/what-we-do.html" do
+                  - t("menu").drop(1).first(1).each do |nav|
+                    = nav
+
+              %li{ nav_active("#{I18n.locale}/contact-us.html") }
+                = link_to "/#{I18n.locale}/contact-us.html" do
+                  - t("menu").drop(2).first(1).each do |nav|
+                    = nav
+
+      %ul.nav.navbar-nav.visible-md.visible-lg.visible-xs
 
         - if lang == :en
 
@@ -50,8 +96,8 @@
               - t("menu").drop(2).first(1).each do |nav|
                 = nav
 
-
       %ul.nav.navbar-nav.navbar-right
+
         %li.dropdown
 
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
@@ -66,7 +112,6 @@
             %span.hidden-sm
               = t("flag.title")
             %span.caret
-
 
           %ul.dropdown-menu
             %li
