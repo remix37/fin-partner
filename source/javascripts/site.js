@@ -11,6 +11,7 @@ $(function() {
   // Vegas
   $("#home").vegas({
       slides: [
+          { src: "../images/home/slide-4.jpg" },
           { src: "../images/home/slide-1.jpg" },
           { src: "../images/home/slide-2.jpg" },
           { src: "../images/home/slide-3.jpg" }
@@ -30,15 +31,15 @@ $(function() {
       margin:10,
       nav:true,
       responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
       }
   })
 
