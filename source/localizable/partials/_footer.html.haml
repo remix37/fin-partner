@@ -1,28 +1,71 @@
 .container.footer.marge-delete
-  .row.white.block
-    .col-md-2.col-md-offset-2
-      %h3 About
-      %ul.list-unstyled
-        %li Compagny
-        %li Blog
+  .row
+    .col-md-10.col-md-offset-1
+      .row.white.block
+        .col-md-3.col-sm-6
+          %h4 About us
+          %ul.list-unstyled
+            - if lang == :en
 
-    .col-md-2
-      %h3 Contact
-      %ul.list-unstyled
-        %li Compagny
-        %li Blog
+              %li
+                = link_to "/about-us.html" do
+                  - t("menu").drop(0).first(1).each do |nav|
+                    = nav
 
-    .col-md-2
-      %h3 Legal
-      %ul.list-unstyled
-        %li Compagny
-        %li Blog
+              %li
+                = link_to "/what-we-do.html" do
+                  - t("menu").drop(1).first(1).each do |nav|
+                    = nav
 
-    .col-md-2
-      %h3 Follow us
-      %ul.list-unstyled
-        %li Compagny
-        %li Blog
+              %li
+                = link_to "/contact-us.html" do
+                  - t("menu").drop(2).first(1).each do |nav|
+                    = nav
+
+            - else
+
+              %li
+                = link_to "/#{I18n.locale}/about-us.html" do
+                  - t("menu").drop(0).first(1).each do |nav|
+                    = nav
+
+              %li
+                = link_to "/#{I18n.locale}/what-we-do.html" do
+                  - t("menu").drop(1).first(1).each do |nav|
+                    = nav
+
+              %li
+                = link_to "/#{I18n.locale}/contact-us.html" do
+                  - t("menu").drop(2).first(1).each do |nav|
+                    = nav
+
+        .col-md-3.col-sm-6
+          %h4 Contact
+          %ul.list-unstyled
+            %li
+              %span.fa.fp-mail-alt
+              &nbsp;: contact@finpartners.co
+            %li
+              %span.fa.fp-phone
+              &nbsp;: +44 7000 000000
+
+        .col-md-3.col-sm-6
+          %h4 Legal mentions
+          %ul.list-unstyled
+            %li
+              %a{:href => "/legal-mentions"} Privacy Policy
+            %li
+              %a{:href => "/legal-mentions#Compagny"} Compagny
+
+        .col-md-3.col-sm-6
+          %h4 Follow us
+          %ul.list-inline
+            %li
+              %span.fp-facebook
+            %li
+              %span.fp-twitter
+            %li
+              %span.fp-linkedin
 
   .row
     .col-md-12.copyright

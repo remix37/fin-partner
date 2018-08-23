@@ -1,5 +1,10 @@
 .footer {
   @include retina('../images/bg-footer.png', 2, cover, center center no-repeat);
+
+  a {
+    color: $white-color;
+  }
+
 }
 
 .copyright{

@@ -18,49 +18,52 @@ fr:
   home:
     title: "Qui est Fin Partners ?"
     intro:
-      - Nous aidons les entreprises à embaucher de grands consultants SAP.
-      - L'industrie SAP est en train de changer. Trouver le meilleur consultant SAP est un véritable défi.
+      - Nous aidons les entreprises à embaucher des consultants SAP hautement qualifiés.
     description:
-      - Établi à Londres en 2018, Fin Partners est devenu un nom de confiance pour les clients et les candidats potentiels. Nous aidons les entreprises à embaucher de grands consultants seniors SAP.
-      - Nos bureaux sont stratégiquement situés à Londres et en Colombie, en France.
-      - Cependant, nos opérations ne sont pas limitées à ces régions.
-      - Fin Partners est spécialisé dans le travail avec une multitude d'entreprises (consultants et utilisateurs finaux).
-      - Notre professionnalisme et notre connaissance du marché des écosystèmes SAP sont inégalés.
+      - Établie à Medellin en 2018, la société Fin Partners est devenue un nom de confiance pour nos clients et candidats potentiels.
+      - La société Fin Partners dispose des bureaux à Londres, à Paris et en Colombie et exerce ses activités dans le monde entier.
+      - Nous travaillons en collaboration avec une multitude d'entreprises, aussi bien des cabinets de conseil que des utilisateurs finaux.
+      - Notre expérience et notre professionnalisme sur le marché de l'écosystème SAP sont inégalables.
 
-  testimonies:
-    - témoignage 1
-    - témoignage 2
-    - témoignage 3
+  services:
+    title: Les services
+    features:
+      -	Recrutement de cadres supérieurs
+      -	Conseil intérimaire
+      -	Perspective stratégique
+    description: Fin Partners was founded in order to service the mature SAP market. We have employed a comprehensive, lateral executive search process to help clients source and recruit SAP executive talent throughout Europe and South America. Our deep knowledge and wide network allow us to identify and secure high-caliber SAP senior consultants for a wide range of blue chip clients.
+
 
   about-us:
-    title: "Pourquoi sommes-nous différents des autres agences de recrutement de cadres ?"
+    title: "Why we are different from other Executive Search Firms?"
     intro:
-      - Nous sommes la seule Executive Search focalisée sur SAP. Nous avons une connaissance approfondie du marché SAP que nous couvrons. Nos consultants sont en mesure d'exécuter la recherche plus efficacement et de réussir.
-      - Nous avons un réseau mondial et des relations profondes avec les clients et les candidats qui nous permettent d'accéder à l'information sur les talents rapidement et efficacement, donnant à nos clients des tendances et des idées pour les aider à prendre leur décision.
+      - We are the only Executive Search service focused exclusively on SAP, a market in which we have deep knowledge. Our consultants are able to recruit more efficiently and successfully than the alternatives.
+      - We have a global network and deep relationships with both clients and candidatesn which allow us to access information on talent profiles more quickly and efficiently.
+      - We provide our clients with trends and insights to help them make better decisions.
 
     features:
-      - title: "Executive Search"
-        description:
-          - "Fin Partners a été créée pour tirer parti d'un marché mature: SAP."
-          - Fin Partners a utilisé un processus de recherche de cadres latéral complet pour aider les clients à recruter et recruter des cadres dirigeants SAP en Europe et en Amérique du Sud. La profondeur des connaissances et du réseau de notre équipe nous permet d'identifier et de sécuriser des consultants senior SAP de haut niveau pour un large éventail de clients de premier ordre.
       - title: "Interim Consulting"
         description:
-          - La rotation ou la succession des dirigeants peut être un véritable défi pour toute organisaion. Les freelancers senior de SAP sont en mesure d'offrir des conseils indépendants et d'acquérir des compétences pendant un certain temps, sans l'engagement d'une embauche à long terme. Nos freelencers peuvent vous assister dans vos projets de cycle complet SAP.
-          - En partenariat avec les partenaires de Fin, les clients ont accès à un réseau de consultants SAP senior tels que SAP Hana, SAP CS, SAP FIORI, SAP C4S ...
+          - Executive turnover and succession can be a real challenge for any organization. Senior SAP freelancers are able to offer independent advice and leadership for determined time period without the commitment of a long-term hire. Our freelancers can assist you during the full cycle of your SAP projects.
+          - By partnering with Fin Partners, clients have access to a network of senior SAP consultants such as SAP Hana, SAP CS, SAP FIORI, SAP C4S, and more.
+
       - title: "Strategic Insights"
         description:
-          - Fin Partners bénéficie d'un réel avantage concurrentiel par une meilleure compréhension de l'écosystème SAP avec segment, secteur ou région.
-          - "Nos offres stratégiques sur mesure sont :"
-        list:
-          - Recherche des concurrents
-          - Analyse stratégique et recommandation
+          - Fin Partners to have a real competitive advantage by a better understanding of the SAP Eco-system with segment, sector or region.
+          - "Our bespoke Strategic insight offerings are:"
+          - <ul>
+              <li>Competitor Research</li>
+              <li>Strategic Analysis & Recommendation</li>
+            </ul>
 
   what-we-do:
-    title: "Notre approche en un seul mot : Transparence"
+    title: "Our Approach"
     intro:
-      - L'industrie du Recrutement est en train de changer. Nous sommes témoins du démarrage en pensant qu'ils peuvent prendre en charge l'industrie du recrutement. Pourquoi ? La raison en est les frais, les frais de cachette.
-      - Chez Fin, nous travaillons sur le succès. Pas de cachette. Nos connaissances et notre réseau du marché SAP nous permettent d'atteindre des honoraires sans frais.
-    description:
-      - Client et Candidats nous voulons être partenaires depuis longtemps.
-      - Les consultants ont la réputation de facturer plus de 20% ...
-      - Votre budget est notre clé. Savoir ce que vous allez dépenser dans le recrutement est très
+      - The Recruitment industry is changing. We are witnessing the emergence of startups who believe they can take over the recruitment industry, in part by hiding their fees. In addition, consultancies often charge over 20% for their services. At Fin Partners, we guarantee affordable success with full transparency of our payment process alongside our expertise and network in the SAP market.
+      - "Our key theme is: TRANSPARENCY. A clear, mutual understanding of your budget and our rates is the key to forming strong long-term partnerships between clients and candidates."
+    features:
+      - title: "Executive search"
+        description: Flat fee
+
+      - title: "Freelance"
+        description: "12%"

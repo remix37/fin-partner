@@ -19,15 +19,14 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 
     .col-md-4.col-md-offset-2.text-center.white
       %img.img-responsive.m-a.mt-15{:src => image_path('home/executive_search_icon.png'), :srcset => " #{image_path('home/executive_search_icon@2x.png')} 2x, #{image_path('home/executive_search_icon.png')} 1x"}/
-      %p.mt-30 Executive search :
-      %h2.mt-15 Flat fee
+
+      - t("what-we-do.features").drop(0).first(1).each do |feature|
+        %p.mt-30= feature[:title]
+        %h2.mt-15= feature[:description]
+
     .col-md-4.text-center.white
       %img.img-responsive.m-a.mt-15{:src => image_path('what-we-do/freelance_icon.png'), :srcset => " #{image_path('what-we-do/freelance_icon@2x.png')} 2x, #{image_path('what-we-do/freelance_icon.png')} 1x"}/
-      %p.mt-30 Freelance :
-      %h2.mt-15 12%
 
-    .clearfix
-
-    .col-md-8.col-md-offset-2.text-center.white.mt-30
-      - t("what-we-do.description").each do |text|
-        %p= text
+      - t("what-we-do.features").drop(1).first(1).each do |feature|
+        %p.mt-30= feature[:title]
+        %h2.mt-15= feature[:description]

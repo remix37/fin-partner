@@ -17,7 +17,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 
 .container.marge-delete
   .row.row-eq-height.bg-white.min-height-block
-    .col-md-6.col-md-push-6.executive-search.bg-block
+    .col-md-6.col-md-push-6.interim-consulting.bg-block
     .col-md-6.col-md-pull-6.block
 
       - t("about-us.features").drop(0).first(1).each do |feature|
@@ -25,32 +25,15 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
         - feature[:description].each do |text|
           %p= text
 
-      - if lang == :en
-        %a.btn.btn-primary{:href => "/contact-us/"} More informations
-      - else
-        %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
+      %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
 
   .row.row-eq-height.bg-white.min-height-block
-    .col-md-6.interim-consulting.bg-block
+    .col-md-6.strategic-insights.bg-block
     .col-md-6.block
 
       - t("about-us.features").drop(1).first(1).each do |feature|
         %h3= feature[:title]
         - feature[:description].each do |text|
           %p= text
-
-      %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
-
-  .row.row-eq-height.bg-white.min-height-block
-    .col-md-6.col-md-push-6.strategic-insights.bg-block
-    .col-md-6.col-md-pull-6.block
-
-      - t("about-us.features").drop(2).first(1).each do |feature|
-        %h3= feature[:title]
-        - feature[:description].each do |text|
-          %p= text
-        %ul
-        - feature[:list].each do |text|
-          %li= text
 
       %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
