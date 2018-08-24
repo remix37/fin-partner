@@ -1,14 +1,15 @@
 ---
 es:
+
   languages:
     - Inglés
     - Francés
     - España
 
   menu:
-    - A propósito de nosotros
     - Qué hacemos
-    - Contáctanos
+    - Nuestro enfoque
+    - Contáctenos
 
   flag:
     title: España
@@ -17,51 +18,53 @@ es:
   home:
     title: "¿Quién es Fin Partners?"
     intro:
-      - Ayudamos a las empresas a contratar excelentes consultores de SAP.
-      - La industria de SAP está cambiando. Encontrar el mejor Consultor de SAP es un verdadero desafío.
+      - Ayudamos a las empresas a contratar consultores de SAP excepcionales.
     description:
-      - Establecido en Londres en 2018, End Partners se ha convertido en un nombre de confianza para clientes y posibles candidatos por igual. Ayudamos a las empresas a contratar grandes consultores senior de SAP.
-      - Nuestras oficinas se encuentran estratégicamente ubicadas en Londres y Colombia, Francia. Sin embargo, estas operaciones no están restringidas a estas regiones.
-      - Fin Partners se especializa en trabajar con una multitud de empresas (consultorías y usuarios finales).
-      - Nuestra profesionalidad y conocimiento del mercado de ecosistemas de SAP no tiene paralelo.
+      - Fin Partners es una empresa que se estableció en Medellín en 2018, y que se ha convertido en un nombre de confianza tanto para nuestros clientes como para posibles candidatos.
+      - Fin Partners tiene oficinas en Londres, en París y en Colombia, y opera en todo el mundo.
+      - Trabajamos con una multitud de empresas que incluyen consultoras y usuarios finales.
+      - Nuestra experiencia y nuestro profesionalismo en el mercado de ecosistemas de SAP no tienen comparación.
 
-  testimonies:
-    - testimony 1
-    - testimony 2
-    - testimony 3
+  services:
+    title: Servicios
+    features:
+      - Búsqueda ejecutiva
+      - Consultoría provisional
+      - Visión estratégica
+
+    description: Fin Partners se fundó con el fin de brindar servicios para el desarrollado mercado de SAP. Utilizamos un proceso integral de búsqueda ejecutiva lateral para ayudar a los clientes a obtener y a contratar talentos ejecutivos de SAP en Europa y en América del Sur. Nuestro profundo conocimiento y nuestra amplia red nos permiten identificar y asegurar la contratación de consultores sénior de SAP de alto calibre para una amplia gama de clientes de primera categoría.
+
 
   about-us:
-    title: "¿Por qué somos diferentes de otras empresas de búsqueda de ejecutivos?"
+    title: "¿Por qué somos diferentes de otras compañías de búsqueda ejecutiva?"
     intro:
-      - Somos el único Executive Search que se enfoca en SAP. Tenemos un conocimiento profundo del mercado SAP que cubrimos. Nuestros consultores pueden ejecutar y tener éxito.
-      - Tenemos una red global y relaciones profundas con clientes y clientes.
+      - Somos los únicos que brindamos servicios de búsqueda ejecutiva exclusivos para SAP, un mercado que conocemos al detalle. Nuestros consultores están capacitados para reclutar talentos de manera más eficiente y exitosa que otras empresas.
+      - Contamos con una red global y con relaciones profundas con clientes y candidatos, lo que nos permite acceder a información sobre perfiles de talento de manera más rápida y eficiente.
+      - Brindamos a nuestros clientes acceso a tendencias y a visiones para ayudarlos a tomar mejores decisiones.
 
     features:
-      - title: "Búsqueda ejecutiva"
+      - title: "Consultoría provisional"
         description:
-          - "End Partners se fundó para aprovechar un mercado maduro: SAP"
-          - End Partners ha estado reclutando un motor global de búsqueda de ejecutivos para ayudar a los talentos ejecutivos de SAP en Europa y América del Sur. Nuestro equipo directivo está liderando el camino en los consultores senior de SAP para una amplia gama de clientes de primera línea.
-          
-      - title: "Interim Consulting"
-        description:
-          - La rotación o sucesión ejecutiva puede ser un verdadero desafío para cualquier organización. Los profesionales autónomos senior de SAP pueden ofrecer asesoramiento y liderazgo independientes por un tiempo y un período, con el compromiso de un contrato a largo plazo. Nuestros profesionales independientes pueden ayudarlo con sus proyectos de ciclo completo de SAP.
-          - Al asociarse con socios de Fin, los clientes tienen acceso a una red de consultores senior de SAP como SAP Hana, SAP CS, FIORI SAP, SAP C4S ...
+          - La rotación y sucesión de ejecutivos puede ser un verdadero desafío para cualquier organización. Los profesionales independientes sénior de SAP pueden ofrecer asesoramiento y liderazgo independientes durante un período determinado sin el compromiso de un contrato a largo plazo. Nuestros profesionales independientes pueden asistirle durante el ciclo completo de sus proyectos de SAP.
+          - Al asociarse con Fin Partners, los clientes tienen acceso a una red de consultores sénior de SAP, como SAP Hana, SAP CS, SAP FIORI, SAP C4S y otros.
 
-
-      - title: "Ideas estratégicas"
+      - title: "Visiones estratégicas"
         description:
-          - End Partners tiene una ventaja competitiva al comprender mejor el Eco-sistema SAP con segmento, sector o región.
-          - "Nuestras ofertas de visión estratégica a medida son:"
-        list:
-          - Competidor de Investigación
-          - Análisis Estratégico y Recomendación
+          - Fin Partners cuenta con una ventaja competitiva real gracias a una mejor comprensión del ecosistema SAP según cada segmento, sector o región.
+          - "Nuestras ofertas prémium de Visión estratégica incluyen lo siguiente :"
+          - <ul>
+              <li>Investigación de competidores</li>
+              <li>Análisis y recomendación estratégicos</li>
+            </ul>
 
   what-we-do:
-    title: "Nuestro enfoque en una palabra: Transparencia"
+    title: "Nuestro enfoque"
     intro:
-      - La industria de reclutamiento está cambiando. Estamos siendo testigos de comenzar a pensar que pueden hacerse cargo de la industria del reclutamiento. ¿Por qué? El motivo son los honorarios, las tarifas de ocultamiento.
-      - En el socio final, estamos trabajando en el éxito. No se esconden las cuotas de entrada. Nuestro conocimiento y nuestra red del mercado de SAP nos permiten sin honorarios elevados.
-    description:
-      - Cliente y candidatos que queremos ser socios durante mucho tiempo.
-      - Las consultoras tienen la reputación de cobrar más del 20% ...
-      - Tu presupuesto es nuestra clave. Saber lo que gastará en reclutar es muy
+      - La industria del reclutamiento está cambiando. Estamos presenciando la aparición de nuevas empresas que creen que pueden asumir el control de la industria del reclutamiento, en parte mediante el ocultamiento de sus tarifas. Además, las empresas consultoras suelen cobrar más del 20 % por sus servicios. En Fin Partners, garantizamos un éxito asequible con total transparencia en nuestros procesos de pago, junto con nuestra experiencia y con nuestra red en el mercado de SAP.
+      - La cuestión esencial para nosotros es LA TRANSPARENCIA. Una comprensión mutua y clara de su presupuesto y de nuestras tarifas es la clave para colaboraciones sólidas a largo plazo entre clientes y candidatos.
+    features:
+      - title: "Búsqueda ejecutiva"
+        description: Tarifa plana
+
+      - title: "Profesionales independientes"
+        description: "12%"

@@ -25,7 +25,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
           %p.link-to-bottom.pl-15
             %a.js-scrollTo.white{:href => "#FinPartners"}= t("home.title")
         .col-sm-4.col-xs-6
-          %ul.list-inline.text-right
+          %ul.list-inline.text-center.follow-us
             %li Follow us
             .clearfix.visible-xs.mb-10
             %li
@@ -59,22 +59,22 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
   .row.bg-fp.block
 
     .col-md-12
-      %h1.white= t("services.title")
+      %h1.white.text-center= t("services.title")
 
     .clearfix
-    .col-sm-4.white
-      %img.img-responsive.mt-15{:src => image_path('home/executive_search_icon.png'), :srcset => " #{image_path('home/executive_search_icon@2x.png')} 2x, #{image_path('home/executive_search_icon.png')} 1x"}/
+    .col-sm-4.white.col-xs-6
+      %img.img-responsive.m-a.mt-15{:src => image_path('home/executive_search_icon.png'), :srcset => " #{image_path('home/executive_search_icon@2x.png')} 2x, #{image_path('home/executive_search_icon.png')} 1x"}/
       - t("services.features").drop(0).first(1).each do |feature|
-        %h3= feature
-    .col-sm-4.white
-      %img.img-responsive.mt-15{:src => image_path('home/interim_consultants_icon.png'), :srcset => " #{image_path('home/interim_consultants_icon@2x.png')} 2x, #{image_path('home/interim_consultants_icon.png')} 1x"}/
+        %h3.text-center= feature
+    .col-sm-4.white.col-xs-6
+      %img.img-responsive.m-a.mt-15{:src => image_path('home/interim_consultants_icon.png'), :srcset => " #{image_path('home/interim_consultants_icon@2x.png')} 2x, #{image_path('home/interim_consultants_icon.png')} 1x"}/
       - t("services.features").drop(1).first(1).each do |feature|
-        %h3= feature
-    .col-sm-4.white
-      %img.img-responsive.mt-15{:src => image_path('home/strategic_insight_icon.png'), :srcset => " #{image_path('home/strategic_insight_icon@2x.png')} 2x, #{image_path('home/strategic_insight_icon.png')} 1x"}/
+        %h3.text-center= feature
+    .col-sm-4.white.col-xs-12
+      %img.img-responsive.m-a.mt-15{:src => image_path('home/strategic_insight_icon.png'), :srcset => " #{image_path('home/strategic_insight_icon@2x.png')} 2x, #{image_path('home/strategic_insight_icon.png')} 1x"}/
       - t("services.features").drop(2).first(1).each do |feature|
-        %h3= feature
+        %h3.text-center= feature
 
     .clearfix
     .col-md-12.mt-15
-      %p.white= t("services.description")
+      %p.white.text-center= t("services.description")
