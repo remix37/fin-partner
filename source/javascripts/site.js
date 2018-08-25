@@ -19,12 +19,14 @@ $(function() {
 
   // Vegas
   $("#home").vegas({
+      delay: 7000,
       slides: [
           { src: "../images/home/slide-4.jpg" },
           { src: "../images/home/slide-1.jpg" },
           { src: "../images/home/slide-2.jpg" },
           { src: "../images/home/slide-3.jpg" }
-      ]
+      ],
+      animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
   });
 
   // Scroll
