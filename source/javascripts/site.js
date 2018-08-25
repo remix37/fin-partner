@@ -8,6 +8,13 @@
 //= require jquery.cookie/jquery.cookie.js
 //= require cookieCuttr/jquery.cookiecuttr.js
 
+// PreLoader
+$(window).on('load', function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({'overflow':'visible'});
+})
+
 $(function() {
 
   // Vegas
@@ -45,20 +52,19 @@ $(function() {
       }
   })
 
-  //Cookies
-  $.cookieCuttr();
-
-  if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-118045796-2']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document. getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  }
-
-
 });
+
+//Cookies
+$.cookieCuttr();
+
+if (jQuery.cookie('cc_cookie_accept') == "cc_cookie_accept") {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-118045796-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document. getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
