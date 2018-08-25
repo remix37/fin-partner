@@ -25,7 +25,10 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
         - feature[:description].each do |text|
           %p= text
 
-      %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
+      - if lang == :en
+        %a.btn.btn-primary{:href => "/contact-us/"} More informations
+      - else
+        %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
 
   .row.row-eq-height.bg-white.min-height-block
     .col-md-6.strategic-insights.bg-block
@@ -36,4 +39,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
         - feature[:description].each do |text|
           %p= text
 
-      %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
+      - if lang == :en
+        %a.btn.btn-primary{:href => "/contact-us/"} More informations
+      - else
+        %a.btn.btn-primary{:href => "/#{I18n.locale}/contact-us/"} More informations
