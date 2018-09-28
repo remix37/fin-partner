@@ -9,6 +9,7 @@ npm install -g bower
 
 # Download libs
 bower install
+bundle install
 
 # Run server
 middleman server
