@@ -67,3 +67,24 @@ en:
 
       - title: "Freelance"
         description: "12%"
+
+  contact-us:
+    question : Are you a candidate or company ?
+    answers :
+      - Candidate
+      - Company
+    name: Name
+    last-name: Last Name
+    country: Country
+    mail: Mail
+    company: Company
+    message: Tell us how we can help you
+    subject: What subject are you interested in?
+    subject-list:
+      - Executive Search
+      - Interim Consulting
+      - SAP Market Insight
+      - Talent Advisory
+      - Other
+    resume: Join your CV/resume
+    submit: Submit

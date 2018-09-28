@@ -43,12 +43,12 @@ fr:
       - Nous fournissons à nos clients des renseignements et des conseils pour les aider à prendre de meilleures décisions.
 
     features:
-      - title: "Conseil intérimaire"
+      - title: "Freelance"
         description:
           - La turnover des cadres et la relève peuvent représenter un véritable défi pour n'importe quelle entreprise. Les collaborateurs indépendants chevronnés SAP sont en mesure d'offrir des conseils et un leadership unique pendant une période déterminée, sans engagement d'embauche à long terme. Nos collaborateurs indépendants peuvent vous assister tout au long du cycle complet de vos projets SAP.
           - En devenant partenaire de la société Fin Partners, les clients ont accès à un réseau de consultants SAP chevronnés tels que SAP Hana, SAP CS, SAP FIORI, SAP C4S, SAP C4S, SAP ARIBA et bien plus encore.
 
-      - title: "Perspectives stratégiques"
+      - title: "Conseils stratégiques"
         description:
           - La société Fin Partners dispose d'un véritable avantage concurrentiel grâce à une meilleure compréhension de l'écosystème SAP selon le segment, le secteur ou la région.
           - "Nos offres de perspicacité stratégique haut de gamme comprennent :"
@@ -69,3 +69,24 @@ fr:
 
       - title: "Collaborateur indépendant"
         description: "12%"
+
+  contact-us:
+    question : Êtes-vous un candidat ou un compagnie ?
+    answers :
+      - Candidat
+      - Compagnie
+    name: Prénom
+    last-name: Nom de famille
+    country: Pays
+    mail: Email
+    company: Compagnie
+    message: Votre besoin
+    subject: Quels sont les sujets qui vous intéresse ?
+    subject-list:
+      - Recrutement de cadres supérieurs
+      - Freelance
+      - SAP Market Insight
+      - Talent Advisory
+      - Autre
+    resume: Joindre votre CV
+    submit: Envoyer

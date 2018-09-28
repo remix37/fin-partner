@@ -39,66 +39,53 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
       .form-group
         %label{:for => "Profil"}
         %select.form-control#Profil{:name => "profil", :required => "", "data-validation" => "required"}
-          %option{:disabled => "", :selected => "selected", :value => ""} Are you a candidate or company ?
-          %option{:value => "Candidate"} Candidate
-          %option{:value => "Company"} Company
+          %option{:disabled => "", :selected => "selected", :value => ""}= t("contact-us.question")
+
+          - t("contact-us.answers").each do |answer|
+            %option{:value => "#{answer}"}=answer
 
       .row
         .col-xs-6
           .form-group
-            %input.form-control{:name => "name", :placeholder => "First name", :type => "text", :required => "", "data-validation" => "required"}/
+            %input.form-control{:name => "#{t("contact-us.name")}", :placeholder => "#{t("contact-us.name")}", :type => "text", :required => "", "data-validation" => "required"}/
 
         .col-xs-6
           .form-group
-            %input.form-control{:name => "last name", :placeholder => "Last name", :type => "text", :required => "", "data-validation" => "required"}/
+            %input.form-control{:name => "#{t("contact-us.last-name")}", :placeholder => "#{t("contact-us.last-name")}", :type => "text", :required => "", "data-validation" => "required"}/
 
       .clearfix
 
       .row
         .col-xs-6
           .form-group
-            %input#country.form-control{:name => "country", :placeholder => "Country", :type => "text", :required => "", "data-validation" => "required"}/
+            %input#country.form-control{:name => "#{t("contact-us.country")}", :placeholder => "#{t("contact-us.country")}", :type => "text", :required => "", "data-validation" => "required"}/
 
         .col-xs-6
           .form-group
-            %input.form-control{:name => "mail", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
+            %input.form-control{:name => "#{t("contact-us.mail")}", :placeholder => "#{t("contact-us.mail")}", :type => "email", :required => "", "data-validation" => "email"}/
 
       .form-group
-        %input.form-control{:name => "company", :placeholder => "Company", :type => "text", :required => "", "data-validation" => "required"}/
+        %input.form-control{:name => "#{t("contact-us.company")}", :placeholder => "#{t("contact-us.company")}", :type => "text", :required => ""}/
 
       .form-group
-        %textarea.form-control{:name => "message", :placeholder => "Tell us how we can help you", :rows => "3"}
+        %textarea.form-control{:name => "#{t("contact-us.message")}", :placeholder => "#{t("contact-us.message")}", :rows => "3"}
 
     .col-md-6
 
       .form-group
-        %label{:for => ""} What subject are you interested in?
+        %label{:for => ""}= t("contact-us.subject")
 
-        .checkbox
-          %label
-            %input{:value => "Executive Search", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
-            Executive Search
-
-        .checkbox
-          %label
-            %input{:value => "Interim Consulting", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
-            Interim Consulting
-
-        .checkbox
-          %label
-            %input{:value => "SAP Market Insight", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
-            SAP Market Insight
-
-        .checkbox
-          %label
-            %input{:value => "Talent Advisory", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}/
-            Talent Advisory
+        - t("contact-us.subject-list").each do |subject|
+          .checkbox
+            %label
+              %input{:value => "#{subject}", "data-validation" => "checkbox_group", "data-validation-qty" => "min1", :name => "subject[]", :type => "checkbox"}
+              = subject
 
       .form-group
-        %label Join your CV/resume
+        %label{:for => ""}= t("contact-us.resume")
         %input{:name => "cv", :type => "file", "data-validation" => "mime size", "data-validation-allowing" => "pdf, doc, docx", "data-validation-max-size" => "2M"}/
 
-      %button.btn.btn-primary{:type => "Submit"} Submit
+      %button.btn.btn-primary{:type => "#{t("contact-us.submit")}"}= t("contact-us.submit")
 
 %script{:src => "//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"}
 = partial "partials/form-validation.html.haml"
