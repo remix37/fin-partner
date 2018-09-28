@@ -24,7 +24,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
     .col-md-12
       #thank-you-message.hidden{:role => "alert"}
         Thank you for contacting us we'll get back to you, as soon as we can.
-  %form.row.block{:action => "https://getsimpleform.com/messages?form_api_token=461f7854117b75a3f540ef9a88b513e2", :method => "post", :enctype => "multipart/form-data"}
+  %form.row.block{:action => "https://getsimpleform.com/messages?form_api_token=11762de83d1daea1f2d88c9786cfb63d", :method => "post", :enctype => "multipart/form-data"}
 
     - if lang == :en
       %input{:name => "redirect_to", :type => "hidden", :value => "https://fin-partners.netlify.com/contact-us/#thank-you"}/
@@ -39,9 +39,9 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
       .form-group
         %label{:for => "Profil"}
         %select.form-control#Profil{:name => "profil", :required => "", "data-validation" => "required"}
-          %option{:disabled => "", :selected => "selected", :value => ""} Do you are a candidate or compagny ?
+          %option{:disabled => "", :selected => "selected", :value => ""} Are you a candidate or company ?
           %option{:value => "Candidate"} Candidate
-          %option{:value => "Compagny"} Compagny
+          %option{:value => "Company"} Company
 
       .row
         .col-xs-6
@@ -64,7 +64,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
             %input.form-control{:name => "mail", :placeholder => "Email", :type => "email", :required => "", "data-validation" => "email"}/
 
       .form-group
-        %input.form-control{:name => "compagny", :placeholder => "Compagny", :type => "text", :required => "", "data-validation" => "required"}/
+        %input.form-control{:name => "company", :placeholder => "Company", :type => "text", :required => "", "data-validation" => "required"}/
 
       .form-group
         %textarea.form-control{:name => "message", :placeholder => "Tell us how we can help you", :rows => "3"}
@@ -96,7 +96,7 @@ title : Fin Partners - Global leader in SAP executive search and Talent Advisory
 
       .form-group
         %label Join your CV/resume
-        %input{:name => "cv", :type => "file", :required => "", "data-validation" => "mime size", "data-validation-allowing" => "pdf", "data-validation-max-size" => "2M"}/
+        %input{:name => "cv", :type => "file", "data-validation" => "mime size", "data-validation-allowing" => "pdf, doc, docx", "data-validation-max-size" => "2M"}/
 
       %button.btn.btn-primary{:type => "Submit"} Submit
 
