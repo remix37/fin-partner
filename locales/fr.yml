@@ -71,7 +71,7 @@ fr:
         description: "12%"
 
   contact-us:
-    question : Êtes-vous un candidat ou un compagnie ?
+    question : Êtes-vous un candidat ou une entreprise ?
     answers :
       - Candidat
       - Compagnie

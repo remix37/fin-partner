@@ -2,11 +2,24 @@
   :javascript
 
     $("#country").countrySelect({
-    	defaultCountry: 'gb',
-    	preferredCountries: ['gb', 'fr', 'es']
+    	defaultCountry: 'us',
+    	preferredCountries: ['us', 'fr', 'co']
     });
 
     $.validate({
+      modules : 'file'
+    });
+
+- elsif lang == :es
+  :javascript
+
+    $("#country").countrySelect({
+    	defaultCountry: 'co',
+    	preferredCountries: ['us', 'fr', 'co']
+    });
+
+    $.validate({
+      lang : '#{I18n.locale}',
       modules : 'file'
     });
 
@@ -15,7 +28,7 @@
 
     $("#country").countrySelect({
     	defaultCountry: '#{I18n.locale}',
-    	preferredCountries: ['gb', 'fr', 'es']
+    	preferredCountries: ['us', 'fr', 'co']
     });
 
     $.validate({

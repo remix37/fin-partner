@@ -44,15 +44,22 @@
           %ul.list-unstyled
             %li
               %span.fa.fp-mail-alt
-              &nbsp;: contact@fin-partners.co
+              \: contact@fin-partners.co
 
         .col-md-3.col-sm-6
           %h4 Legal mentions
           %ul.list-unstyled
-            %li
-              %a{:href => "/legal-mentions"} Privacy Policy
-            %li
-              %a{:href => "/legal-mentions#Company"} Company
+
+            - if lang == :en
+              %li
+                %a{:href => "/legal-mentions"} Privacy Policy
+              %li
+                %a{:href => "/legal-mentions#Company"} Company
+            - else
+              %li
+                %a{:href => "/#{I18n.locale}/legal-mentions"} Privacy Policy
+              %li
+                %a{:href => "/#{I18n.locale}/legal-mentions#Company"} Company
 
         .col-md-3.col-sm-6
           %h4 Follow us
